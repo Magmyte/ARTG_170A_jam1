@@ -9,11 +9,217 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Godspeed, Ember.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Godspeed, Ember" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B05A2F1E-F833-472C-AABF-659BC52D7CF3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-story {
-  background-color: #4B5320;
-  color: black;
+<tw-storydata name="Godspeed, Ember" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B05A2F1E-F833-472C-AABF-659BC52D7CF3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-include[title="Sidebar"] {
+	width: 80%;
+  	font-size: .4em;
+	position: fixed;
+	bottom: 5%;
+  	right: 0%;
+	padding: 0.15em;
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Talk-about-here,-the-war" color="yellow"></tw-tag><tw-tag name="Try-to-sound-smart" color="red"></tw-tag><tw-tag name="Me-before-war" color="blue"></tw-tag><tw-tag name="Alex-Male" color="blue"></tw-tag><tw-tag name="Alex-Female" color="red"></tw-tag><tw-passagedata pid="1" name="Intro" tags="" position="300,50" size="100,100">Elyria is at war, and we&#39;ve seen nothing like this before. The whole globe turned into a war machine, no one is safe. Years ago we were still playing the blame game.
+
+/* Style both of the sidebar links. */
+tw-icon {
+	opacity: 0.5;
+}
+tw-icon:hover {
+    opacity: 0.75;
+}
+
+/* Style the Undo sidebar link. */
+tw-icon.undo {
+	color: #fff;
+    font-family: 'IM Fell French Canon SC', serif;
+	width: 15%;
+  	font-size: .8em;
+	position: fixed;
+  	z-index: 2;
+	bottom: 10%;
+  	right: 0%;
+	padding: 0.15em;
+ 	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+/* Style the Redo sidebar link. */
+tw-icon.redo {
+	color: #fff;
+    font-family: 'IM Fell French Canon SC', serif;
+	width: 15%;
+  	font-size: .8em;
+	position: fixed;
+  	z-index: 2;
+	bottom: 5%;
+  	right: 0%;
+	padding: 0.15em;
+ 	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#navitext {
+    font-size: .7em;
+    font-family: 'IM Fell French Canon SC', serif;
+}
+
+#navitext .enchantment-link, tw-link {
+	color: #e4f4f7; 
+}
+
+#navitext .enchantment-link:hover, tw-link:hover {
+	color: #ed2e00;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+
+body,
+
+tw-story
+{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+}
+
+tw-passage {
+
+  	display: block;
+  	background-color: rgba(0, 0, 0, 0.65);
+  	background-align: center;
+  	border-left-style: double;
+  	border-bottom-style: double;
+  	border-right-style: double;
+  	border-top-style: double;
+  	border-color: #464646;
+  	padding-left: 6%;
+  	padding-right: 6%;
+  	padding-bottom: 6%;
+  	padding-top: 8%;
+  	margin: 2% auto;
+  	flex-direction: column;
+    width: 80%;
+    box-shadow: 0px 0px 4px 7px rgba(0, 0, 0, 0.7);
+}
+
+
+.enchantment-link, tw-link {
+	color: #d52a00; 
+}
+
+.enchantment-link:hover, tw-link:hover {
+	color: #ff7023;
+}
+
+.visited {
+	color: #ff9f85;
+}
+
+.visited:hover {
+	color: #ffc9a5;
+}
+
+#portraitR {
+    position: fixed;
+  	z-index: 1;
+    right: 5%;
+    top: 5%;
+    width: 18%;
+    text-align: center;
+}
+
+#portraitL {
+    position: fixed;
+  	z-index: 1;
+    left: 5%;
+    top: 5%;
+    width: 18%;
+    text-align: center;
+}
+
+.responsive-image {
+  height: auto;
+  width: 100%;
+}
+
+ @media screen and (orientation:portrait) and (max-width: 768px) {
+  h1,
+  h2{
+	  font-size: .7em;
+  }
+  h3,
+  h4,
+  h5{
+	font-size: .7em;
+  }
+   body { 
+      font-size: .9em; 
+   }
+}
+
+@media only screen and (orientation:landscape) and (max-width: 768px) {
+
+ 
+  #portraitR {
+	  position: fixed;
+	  right: 5%;
+	  top: 2%;
+	  width: 12%;
+	  text-align: center;
+  }
+
+  #portraitL {
+	  position: fixed;
+	  left: 3%;
+	  top: 2%;
+	  width: 12%;
+	  text-align: center;
+  }
+
+  h1,
+  h2{
+	  font-size: .8em;
+  }
+  h3,
+  h4,
+  h5{
+	font-size: .8em;
+  }
+   body { 
+      font-size: 1.5em; 
+   }
+  tw-passage{
+	padding-left: 2%;
+  	padding-right: 2%;
+  	padding-bottom: 2%;
+  	padding-top: 2%;
+  	margin: -5%;
+  	flex-direction: column;
+    width: 100%;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.7);
+  }
+  tw-story{
+	padding: -5% auto;
+	margin: 0% auto;
+	width: 100%;
+	background-size: cover;
+	background-color: #4B5320;
+  	color: black;
+  }
+}
+
+tw-story[tags~="default"] {
+ background-image:url("default.jpg");
+}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Talk-about-here,-the-war" color="yellow"></tw-tag><tw-tag name="Try-to-sound-smart" color="red"></tw-tag><tw-tag name="Me-before-war" color="blue"></tw-tag><tw-tag name="Alex-Male" color="blue"></tw-tag><tw-tag name="Alex-Female" color="red"></tw-tag><tw-passagedata pid="1" name="Intro" tags="" position="300,50" size="100,100">Elyria is at war, and we&#39;ve seen nothing like this before. The whole globe turned into a war machine, no one is safe. Years ago we were still playing the blame game.
 
 The royal family, the Stahls, of the Iron Country was overthrown. They became the puppets of a certain short, mustached man. The Iron Imperium was born, took over most of the central continent. It was ugly in the East as well, the Sunrisen Empire proved to be just as ruthless as the Imperium. Maybe we the nations of the Union was to blame, we made it hard for them with our taxes and regulations. But if you ask me, massacring innocnets and invading bystanding countries, that&#39;s foul.
 
@@ -35,11 +241,9 @@ I have been checking the pigeon post at least five times a day, everyday. Yes, I
 
 Hold on. What do I look like?
 
-&#39;&#39;Alex M Art&#39;&#39;
-[[Option A]]
+(link: &quot;Alex M Art&quot;)[(set: $playerGender to 1)(goto: &quot;Choice Made&quot;)]
 
-&#39;&#39;Alex F Art&#39;&#39;
-[[Option B]]
+(link: &quot;Alex F Art&quot;)[(set: $playerGender to 0)(goto: &quot;Choice Made&quot;)]
 </tw-passagedata><tw-passagedata pid="4" name="pigeons" tags="" position="600,350" size="100,100">I take the letters from the pigeons and limp over to a stool.
 
 I read the names and the letters.
@@ -50,7 +254,13 @@ I read the names and the letters.
 
 [[Clara Weiss]], a translator.
 
-What a strange bunch... But hey... Three darn pigeons, maybe Lady Luck doesn&#39;t hate me after all.</tw-passagedata><tw-passagedata pid="5" name="Marína &quot;Misha&quot; Volkova" tags="" position="600,700" size="100,100">Marína&#39;s pigeon has white spots, it coos weakly as I hold it in my hands. Cold, shivering, scared. I stare into its beady eyes, I feel for the bird. It must&#39;ve flown a long way. I send the pigeon away after retreiving the letter.
+What a strange bunch... But hey... Three darn pigeons, maybe Lady Luck doesn&#39;t hate me after all.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="5" name="Marína &quot;Misha&quot; Volkova" tags="" position="600,700" size="100,100">Marína&#39;s pigeon has white spots, it coos weakly as I hold it in my hands. Cold, shivering, scared. I stare into its beady eyes, I feel for the bird. It must&#39;ve flown a long way. I send the pigeon away after retreiving the letter.
 
 The letter was written on a torn page of a field manual of sorts. One side is printed in Volnyaian, the other side was scribbled with elementary handwriting.
 
@@ -66,7 +276,13 @@ The letter was written on a torn page of a field manual of sorts. One side is pr
 Not... Quite the lady. But hey, she already made me giggle a few times. You know what? I can imagine her dining with Finn and I. I should have fed the pigeon, maybe next time. Now I should...
 
 Think about how to [[write Misha back]].
-Check out the other [[pigeons]].</tw-passagedata><tw-passagedata pid="6" name="Clara Weiss" tags="" position="600,50" size="100,100">Clara&#39;s pigeon has a coat of slate, silvery feather. Its crimson gaze pierce into my eyes. It does not resist when I take the letter from its back, it simply stood dutifully. As soon as its job is finished, the silver bird flutter towards the sky with no hesitation.
+Check out the other [[pigeons]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="6" name="Clara Weiss" tags="" position="600,50" size="100,100">Clara&#39;s pigeon has a coat of slate, silvery feather. Its crimson gaze pierce into my eyes. It does not resist when I take the letter from its back, it simply stood dutifully. As soon as its job is finished, the silver bird flutter towards the sky with no hesitation.
 
 The letter is waxed. How fancy?
 
@@ -81,7 +297,14 @@ The parchment inside is of a cream white, its edges sharp enough to cut skin.
 Wow, so formal. Are you sure a secret agent didn&#39;t write this? Even then... I want to know more about this Clara Weiss, something about this letter seems truthful. I shall...
 
 Think about how to [[write Ms. Weiss back]].
-Check out the other [[pigeons]].</tw-passagedata><tw-passagedata pid="7" name="write Ms. Weiss back" tags="" position="750,50" size="100,100">I fetch a pen and paper and head towards a nearby stool. Time to respond to this fine lady. 
+Check out the other [[pigeons]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/clara.png&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="7" name="write Ms. Weiss back" tags="" position="750,50" size="100,100">I fetch a pen and paper and head towards a nearby stool. Time to respond to this fine lady. 
 
 I can flip back to see [[Clara Weiss]]&#39; letter.
 
@@ -93,7 +316,13 @@ What should I write about? She seems sophisticated, but I am not a sophisticated
 
 [[Talk about myself before the war]] (WIP).
 
-[[Talk about here, the war]].</tw-passagedata><tw-passagedata pid="8" name="Talk about myself before the war" tags="Me-before-war" position="900,350" size="100,100">I should tell her more about myself. That way, maybe I can know more about her in the future. If there is a future. Hey, I just want her to reply, not marry me.
+[[Talk about here, the war]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="8" name="Talk about myself before the war" tags="Me-before-war" position="900,350" size="100,100">I should tell her more about myself. That way, maybe I can know more about her in the future. If there is a future. Hey, I just want her to reply, not marry me.
 
 &quot;Dear Ms. Weiss,
 	Got your letter today. I am glad to hear from you, it is like a little break from all this mess. I have a bum leg from shrapnel, so I&#39;m stuck with cooking duties and hualing supply crates. I wish to be back home. But like you said, even back home is affected by the war.
@@ -107,7 +336,13 @@ Man, what? I am just rambling. Do I at least sound like an interesting person? I
 
 [[Send it.]]
 
-Think about how to [[write Ms. Weiss back]] some more.</tw-passagedata><tw-passagedata pid="9" name="Talk about here, the war" tags="Talk-about-here,-the-war" position="900,50" size="100,100">Let&#39;s see... I should write about where I am now. She must be curious about what war is like.
+Think about how to [[write Ms. Weiss back]] some more.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="9" name="Talk about here, the war" tags="Talk-about-here,-the-war" position="900,50" size="100,100">Let&#39;s see... I should write about where I am now. She must be curious about what war is like.
 
 &quot;Dear Ms. Weiss,
 	Recieving your letter is like breathing fresh air after a long dive into dark waters. The soul behind my pen is weary, everyday both a blur and a drag. Bothered by the howling shellings and distant gunfires, I face the unknown everyday, hoping I have open arms to return to when all this is done and over.
@@ -120,7 +355,13 @@ Is this good? I don&#39;t want to bore her with the war. But she knows who I am,
 
 [[Send it.]]
 
-Think about how to [[write Ms. Weiss back]] some more.</tw-passagedata><tw-passagedata pid="10" name="Try to sound smart" tags="Try-to-sound-smart" position="900,200" size="100,100">She sounds like a bright minded lady, I can be quite bright minded myself. Be my witness:
+Think about how to [[write Ms. Weiss back]] some more.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="10" name="Try to sound smart" tags="Try-to-sound-smart" position="900,200" size="100,100">She sounds like a bright minded lady, I can be quite bright minded myself. Be my witness:
 
 &quot;Dear Ms. Weiss,
 	I am delighted to hear from you. If my note arrived to you like a cherished book, yours arrive to me like a prodigious tome. Your letter brims with intruige and sentiment I deeply appreciate.
@@ -134,7 +375,13 @@ What? I&#39;m trying to match her tone! But again, maybe I sound goofy. As if I&
 
 [[Send it.]]
 
-Think about how to [[write Ms. Weiss back]] some more.</tw-passagedata><tw-passagedata pid="11" name="Send it." tags="" position="1050,50" size="100,100">I roll the letter up as carefully as I can and slide it into a tube. I reach for my trusty avian friend: Ember.
+Think about how to [[write Ms. Weiss back]] some more.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="11" name="Send it." tags="" position="1050,50" size="100,100">I roll the letter up as carefully as I can and slide it into a tube. I reach for my trusty avian friend: Ember.
 
 Ember&#39;s a sweetheart, her redish coat earned her the name. There were times I would just hold her and feel her warmth. As she coo gently, It is like I am holding my own heart.
 
@@ -142,7 +389,13 @@ I strap the letter tube to her back and look into her deep brown eyes.
 
 &quot;[[Godspeed, Ember]].&quot;
 
-And off she goes, the sound of her wings clapping through crisp air.</tw-passagedata><tw-passagedata pid="12" name="Godspeed, Ember" tags="" position="1200,50" size="100,100">Now that&#39;s done, I must prep for dinner...
+And off she goes, the sound of her wings clapping through crisp air.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="12" name="Godspeed, Ember" tags="" position="1200,50" size="100,100">Now that&#39;s done, I must prep for dinner...
 
 As the sun begin to set I see the laddies and lassies making their way toward the serving line. Judging by their looks everything is normal. Another terrible day in the trenches, no advancment, no excitment, no peace, only constant, numbing fear.
 
@@ -155,10 +408,16 @@ After that, I scoop into my own bowl, I grab a slice of stale bread from another
 Finn
 &quot;Alex!&quot; He waves, his voice weary but still hold rare enthuthiasim.
 
-I [[sit next to Finn]].</tw-passagedata><tw-passagedata pid="13" name="sit next to Finn" tags="" position="1350,50" size="100,100">Me
+I [[sit next to Finn]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="13" name="sit next to Finn" tags="" position="1350,50" size="100,100">Me
 &quot;How was the trenches?&quot;
 
-FInn
+Finn
 &quot;Was sh#t!&quot; he cheers as he begin to eat my delicious stew &quot;Exactly like this, sh#t!&quot;
 
 Me
@@ -178,7 +437,13 @@ Me
 
 We finish dinner.
 
-There was nothing much more to do, let&#39;s [[end the day]].</tw-passagedata><tw-passagedata pid="14" name="end the day" tags="" position="1500,50" size="100,100">I sleep alright. Until some lassie woke up in the middle of the night, bawling. She must&#39;ve been one of the newer recruits. I&#39;m not bothered, she is pretty far away from me.
+There was nothing much more to do, let&#39;s [[end the day]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="14" name="end the day" tags="" position="1500,50" size="100,100">I sleep alright. Until some lassie woke up in the middle of the night, bawling. She must&#39;ve been one of the newer recruits. I&#39;m not bothered, she is pretty far away from me.
 
 I wake up. Realizing I did not sleep alright. I stand in line to destribute breakfast. Flaky biscuits with painfully sweet jam. Not terrible.
 
@@ -186,7 +451,13 @@ Breakfast is always quick. People usually just grab and go.
 
 But I don&#39;t go. I stay.
 
-I have [[crates to haul]].</tw-passagedata><tw-passagedata pid="15" name="crates to haul" tags="" position="1650,50" size="100,100">Sergeant Mason told me &quot;If you can&#39;t walk without looking like Frankenstein having a fit, you better stay in camp, you&#39;ll get my men killed.&quot;
+I have [[crates to haul]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="15" name="crates to haul" tags="" position="1650,50" size="100,100">Sergeant Mason told me &quot;If you can&#39;t walk without looking like Frankenstein having a fit, you better stay in camp, you&#39;ll get my men killed.&quot;
 
 Well, apparently, you can haul fu#king crates and walk looking like Frankenstein having a fit at the same time. Shellings continue in the distance, just loud enough to be a bother.
 
@@ -198,13 +469,25 @@ Okay, that&#39;s that. Now I should...
 
 [[Check the pigeon post]], I have some time, maybe Clara wrote back...
 
-No way, gotta give Ember some time. I should [[prep lunch]], that is my duty.</tw-passagedata><tw-passagedata pid="16" name="Check the pigeon post" tags="" position="1800,200" size="100,100">I open the coop.
+No way, gotta give Ember some time. I should [[prep lunch]], that is my duty.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="16" name="Check the pigeon post" tags="" position="1800,200" size="100,100">I open the coop.
 
 No signs of Ember, Quicksilver, or any new pigeons that catch my eye. No new letters for me.
 
 I still have the letters from Ms. Volkova, maybe I can write her back later.
 
-Now I shoud [[prep lunch]].</tw-passagedata><tw-passagedata pid="17" name="prep lunch" tags="" position="1800,50" size="100,100">Yay. Chicken flavored tin meat. They are going to love this.
+Now I shoud [[prep lunch]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="17" name="prep lunch" tags="" position="1800,50" size="100,100">Yay. Chicken flavored tin meat. They are going to love this.
 
 They love me.
 
@@ -216,7 +499,13 @@ They came as quickly as they left. Back in the trenches, I guess. As for me... I
 
 I [[read Clara&#39;s letter again]].
 
-I [[play some dice games with some mates]].</tw-passagedata><tw-passagedata pid="18" name="read Clara&#39;s letter again" tags="" position="1950,200" size="100,100">&quot;Dear Alex:
+I [[play some dice games with some mates]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="18" name="read Clara&#39;s letter again" tags="" position="1950,200" size="100,100">&quot;Dear Alex:
 	Your Sweetheart profile arrived like a cherished novel, its unturned pages promises secrets and hopes I long to discover. I am Clara Weiss, aged 24, a translator in the Mashington offices of the Union, where my fingers are stained with ink and the air hums with urgency. Your message regarding dreams and fears struck a chord. Though I am spared from the frontline clamor, a quiet dread lingers. Pray, tell me of the soul that guides your pen. What stirs you in these shadowed days? I entrust this letter to my fleetest pigeon: Quicksilver, who has borne many a tale through storm and strife. His story, and mine, may yet unfold for you.
     
     Yours sincerely,
@@ -228,9 +517,21 @@ Maybe even a bombshell. Wait... I don&#39;t even know what she looks like.
 
 Ehhhhhhhhhhh-- Let&#39;s say she&#39;s almost as good looking as I am.
 
-[[Dinner prep]] time.</tw-passagedata><tw-passagedata pid="19" name="play some dice games with some mates" tags="" position="1950,50" size="100,100">Pretty sure the guy with no pinkies is cheating again. Whatever.
+[[Dinner prep]] time.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="19" name="play some dice games with some mates" tags="" position="1950,50" size="100,100">Pretty sure the guy with no pinkies is cheating again. Whatever.
 
-[[Dinner prep]].</tw-passagedata><tw-passagedata pid="20" name="Dinner prep" tags="" position="2100,50" size="100,100">Ham! Tinned ham! Canned gravy and boiled potatoes!! My favorite.
+[[Dinner prep]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="20" name="Dinner prep" tags="" position="2100,50" size="100,100">Ham! Tinned ham! Canned gravy and boiled potatoes!! My favorite.
 
 At least it&#39;s not a stew this time.
 
@@ -238,7 +539,13 @@ The shellings came to a gradual halt. The folks line up. Finn&#39;s here. Must&#
 
 We chat. Some Impy tossed a granade into his trench today, but they climbed out before it blew. All is well.
 
-[[Time to end the day]].</tw-passagedata><tw-passagedata pid="21" name="Time to end the day" tags="" position="2250,50" size="100,100">I wake up.
+[[Time to end the day]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="21" name="Time to end the day" tags="" position="2250,50" size="100,100">I wake up.
 
 Breakfast prep went okay.
 
@@ -246,21 +553,45 @@ Hauling crates was fun.
 
 Lunch was lunch. Finn didn&#39;t have time to chat.
 
-Now I can check [[the pigeon post]] or [[look towards the horizon]].</tw-passagedata><tw-passagedata pid="22" name="the pigeon post" tags="" position="2400,50" size="100,100">I arrive at the post, I pause. Sergeant Mason is there. I...
+Now I can check [[the pigeon post]] or [[look towards the horizon]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="22" name="the pigeon post" tags="" position="2400,50" size="100,100">I arrive at the post, I pause. Sergeant Mason is there. I...
 
 [[Watch from a distance]].
 
-[[Greet and approach]].</tw-passagedata><tw-passagedata pid="23" name="look towards the horizon" tags="" position="2400,200" size="100,100">The sky&#39;s grey. In the distance I see the trenches, I see fog. I hear shellings, I hear debris.
+[[Greet and approach]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="23" name="look towards the horizon" tags="" position="2400,200" size="100,100">The sky&#39;s grey. In the distance I see the trenches, I see fog. I hear shellings, I hear debris.
 
 I&#39;m glad Clara doesn&#39;t have to see this. I try to sound tough but if you put me in the trenches again... It&#39;ll be safe to say we&#39;ll be standing in my piss and I&#39;ll be trembling.
 
-I want to go home. I want to see Clara, though I barely know her. I find myself reading [[her letter]] again.</tw-passagedata><tw-passagedata pid="24" name="Watch from a distance" tags="" position="2550,50" size="100,100">Mason took a letter from a bird, and sent it flying. He left with haste.
+I want to go home. I want to see Clara, though I barely know her. I find myself reading [[her letter]] again.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="24" name="Watch from a distance" tags="" position="2550,50" size="100,100">Mason took a letter from a bird, and sent it flying. He left with haste.
 
 Eh.
 
 I check the coop. Nothing new. I hope Ember&#39;s okay.
 
-Time for [[dinner]].</tw-passagedata><tw-passagedata pid="25" name="Greet and approach" tags="" position="2550,200" size="100,100">Me
+Time for [[dinner]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="25" name="Greet and approach" tags="" position="2550,200" size="100,100">Me
 &quot;Sir.&quot; I give him a nod.
 
 Sgt. Mason
@@ -274,7 +605,13 @@ Sgt. Mason
 
 I check the coop. Nothing new. I hope Ember&#39;s okay.
 
-Now, delightful [[dinner]], coming up.</tw-passagedata><tw-passagedata pid="26" name="dinner" tags="" position="2700,50" size="100,100">The atmosphere is a bit cheerier today. It&#39;s someone&#39;s birthday. We in the mess tent decide to offer him some sweet bread. We know it isn&#39;t as good as a cake but he seems happy.
+Now, delightful [[dinner]], coming up.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="26" name="dinner" tags="" position="2700,50" size="100,100">The atmosphere is a bit cheerier today. It&#39;s someone&#39;s birthday. We in the mess tent decide to offer him some sweet bread. We know it isn&#39;t as good as a cake but he seems happy.
 
 His somewhat reluctant grin made me smile as well.
 
@@ -292,7 +629,13 @@ Me
 
 [[&quot;None of your business.&quot;]]
 
-[[&quot;There&#39;s this girl, called Clara. She&#39;s a translator&quot;]]</tw-passagedata><tw-passagedata pid="27" name="her letter" tags="" position="2550,350" size="100,100">&quot;Dear Alex:
+[[&quot;There&#39;s this girl, called Clara. She&#39;s a translator&quot;]]
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="27" name="her letter" tags="" position="2550,350" size="100,100">&quot;Dear Alex:
 	Your Sweetheart profile arrived like a cherished novel, its unturned pages promises secrets and hopes I long to discover. I am Clara Weiss, aged 24, a translator in the Mashington offices of the Union, where my fingers are stained with ink and the air hums with urgency. Your message regarding dreams and fears struck a chord. Though I am spared from the frontline clamor, a quiet dread lingers. Pray, tell me of the soul that guides your pen. What stirs you in these shadowed days? I entrust this letter to my fleetest pigeon: Quicksilver, who has borne many a tale through storm and strife. His story, and mine, may yet unfold for you.
     
     Yours sincerely,
@@ -300,7 +643,13 @@ Me
         
 What stirs me? The fact that pigeons don&#39;t fly faster, that stirs me. Please, Clara, let your story unfold. Please reply.
 
-It&#39;s time for [[dinner]].</tw-passagedata><tw-passagedata pid="28" name="&quot;Several, actually.&quot;" tags="" position="2850,200" size="100,100">Finn&#39;s eyes widens.
+It&#39;s time for [[dinner]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="28" name="&quot;Several, actually.&quot;" tags="" position="2850,200" size="100,100">Finn&#39;s eyes widens.
 
 Finn
 &quot;Several?&quot; He shrugs &quot;I hate to be the guy but... I think the Bureau is conning you.&quot; Then sighs &quot;Why not find a partner here in camp?&quot;
@@ -317,7 +666,13 @@ I smile.
 
 The night goes on, then it ends.
 
-[[Time for bed]].</tw-passagedata><tw-passagedata pid="29" name="&quot;None of your business.&quot;" tags="" position="2850,50" size="100,100">Me
+[[Time for bed]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="29" name="&quot;None of your business.&quot;" tags="" position="2850,50" size="100,100">Me
 &quot;None of your business.&quot;
 
 Finn
@@ -335,7 +690,13 @@ I smile.
 
 The night goes on, then it ends.
 
-[[Time for bed]].</tw-passagedata><tw-passagedata pid="30" name="&quot;There&#39;s this girl, called Clara. She&#39;s a translator&quot;" tags="" position="2850,350" size="100,100">Finn sips from his mug.
+[[Time for bed]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="30" name="&quot;There&#39;s this girl, called Clara. She&#39;s a translator&quot;" tags="" position="2850,350" size="100,100">Finn sips from his mug.
 
 Finn
 &quot;This seems fishy Alex,&quot; he smirks &quot;a translator with an Imperium name? She could be a spy!&quot;
@@ -357,7 +718,13 @@ Me
 
 I take Finn&#39;s silence as agreement. The night goes on, then it ends.
 
-[[Time for bed]].</tw-passagedata><tw-passagedata pid="31" name="Time for bed" tags="" position="3000,50" size="100,100">Nights passes by. Days go on.
+[[Time for bed]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="31" name="Time for bed" tags="" position="3000,50" size="100,100">Nights passes by. Days go on.
 
 There are nights I just can&#39;t sleep. And nights I read Clara&#39;s letter again and again under the moonlight.
 
@@ -365,13 +732,31 @@ Ember returns, with no letter whatsoever. I&#39;ve been thinking... Maybe Finn i
 
 [[Finn is right, the Bureau of Sweethearts is fake]].
 
-[[Finn is wrong, Clara is a real human being who wants to know me better]].</tw-passagedata><tw-passagedata pid="32" name="Finn is right, the Bureau of Sweethearts is fake" tags="" position="3150,50" size="100,100">Who would want to write to me? If such a gal like Clara exist, she&#39;s probably dating a co-worker already. Or going on tea parties with her boss. Why find love with those in the frontlines? Why fall in love with those whose tomorrow is in constant jeopardy?
+[[Finn is wrong, Clara is a real human being who wants to know me better]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="32" name="Finn is right, the Bureau of Sweethearts is fake" tags="" position="3150,50" size="100,100">Who would want to write to me? If such a gal like Clara exist, she&#39;s probably dating a co-worker already. Or going on tea parties with her boss. Why find love with those in the frontlines? Why fall in love with those whose tomorrow is in constant jeopardy?
 
-Whatever, at least reading letters is fun. Let&#39;s check the [[pigeon post]]. I have no high expectations.</tw-passagedata><tw-passagedata pid="33" name="Finn is wrong, Clara is a real human being who wants to know me better" tags="" position="3150,200" size="100,100">Clara is real, and so are all the others. We are separated by distance but have the same heart beating inside us.
+Whatever, at least reading letters is fun. Let&#39;s check the [[pigeon post]]. I have no high expectations.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="33" name="Finn is wrong, Clara is a real human being who wants to know me better" tags="" position="3150,200" size="100,100">Clara is real, and so are all the others. We are separated by distance but have the same heart beating inside us.
 
 But if Clara is real and she haven&#39;t reply in so long... Maybe I scared her off, maybe I&#39;m too awkward with my letter. So be it, I&#39;m used to people not liking me.
 
-This is a bore. Let&#39;s check the [[pigeon post]]. I have no high expectations.</tw-passagedata><tw-passagedata pid="34" name="pigeon post" tags="Talk-about-here,-the-war" position="3300,50" size="100,100">There he is, that dammned silver pigeon! Quicksilver&#39;s gaze is unwavering, he coos softly as I take hold of him. I pop open the tube on his back, my fingers moving fast to uncurl the scroll. I read so quick I was holding my breath.
+This is a bore. Let&#39;s check the [[pigeon post]]. I have no high expectations.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="34" name="pigeon post" tags="Talk-about-here,-the-war" position="3300,50" size="100,100">There he is, that dammned silver pigeon! Quicksilver&#39;s gaze is unwavering, he coos softly as I take hold of him. I pop open the tube on his back, my fingers moving fast to uncurl the scroll. I read so quick I was holding my breath.
 
 &quot;Dear Alex,
 	I hope this letter finds you well. If I am honest, I did not anticipate you writing back. A part of me believe the Bureau to be a hoax, a sorry excuse to spy on civilian lives, thus I was not expecting a return message from you. I digress. I am delighted to hear from you again.
@@ -386,7 +771,13 @@ Wow- Maybe Clara is real. But is she too over the top? We are only a few letters
 
 I look into the message tube.
 
-Wait, [[there&#39;s more]].</tw-passagedata><tw-passagedata pid="35" name="there&#39;s more" tags="" position="3450,50" size="100,100">Rolled up neatly but stiffly is a picture of a young woman. She&#39;s wearing a faded Union scarf over a simple blouse. Her eyes sharp but her lips curved into a gentle smile.
+Wait, [[there&#39;s more]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="35" name="there&#39;s more" tags="" position="3450,50" size="100,100">Rolled up neatly but stiffly is a picture of a young woman. She&#39;s wearing a faded Union scarf over a simple blouse. Her eyes sharp but her lips curved into a gentle smile.
 
 &#39;&#39;Clara Picture Here&#39;&#39;
 
@@ -396,7 +787,13 @@ I stare at the photo with unblinking eyes. By the looks of it, Clara is stressed
 
 I quickly stow both the photo and the letter away. I still have duties, I can&#39;t write a letter just yet. I send Quicksilver flying back to his mistress.
 
-I make my way back to the main camp with long strides. I have [[boxes to hual]].</tw-passagedata><tw-passagedata pid="36" name="boxes to hual" tags="" position="3600,50" size="100,100">Boring job, hauling boxes. But my heart beat just a little fast than usual with Clara&#39;s letter and photo in my pocket. I hope a dumb grin isn&#39;t on my face.
+I make my way back to the main camp with long strides. I have [[boxes to hual]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="36" name="boxes to hual" tags="" position="3600,50" size="100,100">Boring job, hauling boxes. But my heart beat just a little fast than usual with Clara&#39;s letter and photo in my pocket. I hope a dumb grin isn&#39;t on my face.
 
 Then here comes Finn. Finn? Here? Now?
 
@@ -406,25 +803,49 @@ I should...
 
 [[Tell him about the letter]]. Clara regards me as a friend already!
 
-[[See what&#39;s up]]. Why is Finn here?</tw-passagedata><tw-passagedata pid="37" name="Show him Clara&#39;s photo" tags="" position="3750,200" size="100,100">Me
+[[See what&#39;s up]]. Why is Finn here?
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="37" name="Show him Clara&#39;s photo" tags="" position="3750,200" size="100,100">Me
 &quot;Finn!&quot; I call, reaching for the letter &quot;Check this ou-&quot;
 
 Finn
 &quot;Scouts! Scouts spotted in the north! Raid incoming!&quot; Finn Interrupts, calling not only to me but to the entire camp. &quot;Imps are punching trough, we&#39;re stretched thin. Go! Report to Callahan!&quot; He goes on in a panic, his message spread like wildfire.
 
-I limp over to him &quot;[[What&#39;s going on?]]&quot;</tw-passagedata><tw-passagedata pid="38" name="Tell him about the letter" tags="" position="3750,50" size="100,100">Me
+I limp over to him &quot;[[What&#39;s going on?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="38" name="Tell him about the letter" tags="" position="3750,50" size="100,100">Me
 &quot;Finn!&quot; I call, reaching for the letter &quot;Listen to this-&quot;
 
 Finn
 &quot;Scouts! Scouts spotted in the north! Raid incoming!&quot; Finn Interrupts, calling not only to me but to the entire camp. &quot;Imps are punching trough, we&#39;re stretched thin. Go! Report to Callahan!&quot; He goes on in a panic, his message spread like wildfire.
 
-I limp over to him &quot;[[What&#39;s going on?]]&quot;</tw-passagedata><tw-passagedata pid="39" name="See what&#39;s up" tags="" position="3750,350" size="100,100">Me
+I limp over to him &quot;[[What&#39;s going on?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="39" name="See what&#39;s up" tags="" position="3750,350" size="100,100">Me
 &quot;Finn,&quot; I call &quot;Back so early-?&quot;
 
 Finn
 &quot;Scouts! Scouts spotted in the north! Raid incoming!&quot; Finn Interrupts, calling not only to me but to the entire camp. &quot;Imps are punching trough, we&#39;re stretched thin. Go! Report to Callahan!&quot; He goes on in a panic, his message spread like wildfire.
 
-I limp over to him &quot;[[What&#39;s going on?]]&quot;</tw-passagedata><tw-passagedata pid="40" name="What&#39;s going on?" tags="" position="3900,50" size="100,100">Finn grabs my shoulder firmly, his eyes peer into mine with worry.
+I limp over to him &quot;[[What&#39;s going on?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="40" name="What&#39;s going on?" tags="" position="3900,50" size="100,100">Finn grabs my shoulder firmly, his eyes peer into mine with worry.
 
 Finn
 &quot;You stay. It&#39;s gonna get ugly.&quot; He turns away with haste &quot;Hurry!&quot; With rifles in hand the recruits abadon their usual duties and followed him.
@@ -441,7 +862,13 @@ I should...
 
 [[Help enforce the trench]], duty calls.
 
-[[Stay]], I have to survive.</tw-passagedata><tw-passagedata pid="41" name="Help enforce the trench" tags="" position="4000,400" size="100,100">I am many things before, but now I am a soldier. This is my duty. I grab my rifle and limp towards where everyone is heading. Imperium be damnned, I will fight.
+[[Stay]], I have to survive.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="41" name="Help enforce the trench" tags="" position="4000,400" size="100,100">I am many things before, but now I am a soldier. This is my duty. I grab my rifle and limp towards where everyone is heading. Imperium be damnned, I will fight.
 
 Finn
 &quot;Alex-!&quot; Finn sees me catch up, &quot;What are you...&quot;
@@ -455,13 +882,25 @@ The northern trench has little to no one there compared to the main eastern barr
 
 Gone.
 
-If hauling sand bags can save lives, [[then sandbags I will haul]]. </tw-passagedata><tw-passagedata pid="42" name="Stay" tags="" position="4050,50" size="100,100">Things like these happen all the time, and each time we return with less people. Better not risk it. I will stay here and do my usual duties. Avoid fights, and you&#39;ll go a long way. If Finn&#39;s way of thinking is anything like mine, then he will survive.
+If hauling sand bags can save lives, [[then sandbags I will haul]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="42" name="Stay" tags="" position="4050,50" size="100,100">Things like these happen all the time, and each time we return with less people. Better not risk it. I will stay here and do my usual duties. Avoid fights, and you&#39;ll go a long way. If Finn&#39;s way of thinking is anything like mine, then he will survive.
 
 I continue to haul crates.
 
 It feels wrong not being with the others, not putting my life on the line along with theirs. But if they were in my shoes, they would do the same.
 
-But let&#39;s be realistic, with my leg throbbing and toes constantly numb, [[I don&#39;t think I can be of much help]].</tw-passagedata><tw-passagedata pid="43" name="then sandbags I will haul" tags="" position="4150,400" size="100,100">Finn and I and many others put our boots against the mud, we scramble to the front, ducking and weaving through the trench. We first dump the sandbags into a heap, then we stack them on top of the walls.
+But let&#39;s be realistic, with my leg throbbing and toes constantly numb, [[I don&#39;t think I can be of much help]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="43" name="then sandbags I will haul" tags="" position="4150,400" size="100,100">Finn and I and many others put our boots against the mud, we scramble to the front, ducking and weaving through the trench. We first dump the sandbags into a heap, then we stack them on top of the walls.
 
 We are able to form piles upon piles. I begin to pant, my brows sweaty as my eyes fail to stay open. My leg quiver and throb beyond control. Soon, I find myself leaning against a wall, struggling to breathe.
 
@@ -475,13 +914,25 @@ With my hands trembling I mutter...
 Me
 &quot;[[Give me a bit]]. I will catch up.&quot;
 
-&quot;I was injured a while back, [[I don&#39;t think I can be of much help]].&quot; I should head back...</tw-passagedata><tw-passagedata pid="44" name="Give me a bit" tags="" position="4150,550" size="100,100">Ruth
+&quot;I was injured a while back, [[I don&#39;t think I can be of much help]].&quot; I should head back...
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="44" name="Give me a bit" tags="" position="4150,550" size="100,100">Ruth
 She nods and gives me a weary grin. The lassie then offers me a hand &quot;I&#39;m Ruth.&quot;
 
 Me
 I smile as I take her hand, she pulls me up &quot;I&#39;m Alex.&quot;
 
-Then, without any other exchange of words, [[we continue serving our duties.]]</tw-passagedata><tw-passagedata pid="45" name="we continue serving our duties." tags="" position="4300,550" size="100,100">It seems like an eternity until I am standing shoulder to shoulder with the other recruits. Finn is next to me. Rifles cold in our hands as we stare into the night, our heads barely out of the trenches.
+Then, without any other exchange of words, [[we continue serving our duties.]]
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="45" name="we continue serving our duties." tags="" position="4300,550" size="100,100">It seems like an eternity until I am standing shoulder to shoulder with the other recruits. Finn is next to me. Rifles cold in our hands as we stare into the night, our heads barely out of the trenches.
 
 Finn
 &quot;Why did you come?&quot; Finn hisses, finally breaking the silence.
@@ -504,7 +955,13 @@ Me
 &quot;I&#39;m doing it for my country.&quot; I shrug. Both of us chuckle.
 
 Finn
-&quot;Bull. You&#39;re doing it for some [[mystery lady]] in Mashington.&quot; Finn laughs.</tw-passagedata><tw-passagedata pid="46" name="mystery lady" tags="" position="4450,550" size="100,100">Me
+&quot;Bull. You&#39;re doing it for some [[mystery lady]] in Mashington.&quot; Finn laughs.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="46" name="mystery lady" tags="" position="4450,550" size="100,100">Me
 &quot;Mystery lady? Come on, she sent me a photo. She&#39;s real! There&#39;s no mystery to this.&quot; I protest, wanting to fully believe myself.
 
 Finn
@@ -529,7 +986,13 @@ A faint pop, and a loud whiz.
 Soldier
 &quot;INCOMING!&quot; A man shouts.
 
-We hold up our rifles and line up our sights. I don&#39;t see a thing. [[A field of nothing]].</tw-passagedata><tw-passagedata pid="47" name="A field of nothing" tags="" position="4600,550" size="100,100">Then the howl of artillery tore through the crisp air. A loud crash not too far from us sends mud and dirt flying. I duck for cover. I can&#39;t see throught the dust, my hand numb as my finger is frozen cold on the trigger.
+We hold up our rifles and line up our sights. I don&#39;t see a thing. [[A field of nothing]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="47" name="A field of nothing" tags="" position="4600,550" size="100,100">Then the howl of artillery tore through the crisp air. A loud crash not too far from us sends mud and dirt flying. I duck for cover. I can&#39;t see throught the dust, my hand numb as my finger is frozen cold on the trigger.
 
 Then gunfire. Then people begin to topple backwards.
 
@@ -554,7 +1017,13 @@ Then trough the fog comes a handful of charging Imperium men and women, we gunne
 My leg is frozen and in pain, unbearable pain. I decide to slide down from my position as my allies handle the next charge. I sit with my back against the wall as gunfire ensue once more. These suicide pushes won&#39;t work, I almost pity the Impies-
 
 Soldier
-&quot;Grenade. [[GRENADE]]!&quot; Someone yells.</tw-passagedata><tw-passagedata pid="48" name="GRENADE" tags="" position="4750,550" size="100,100">I pick up my eyes and there it is. Right in front of my is an Imperium stick grenade. It&#39;ll blow my face off, and the backs of these recruits. People begin to climb out of the trench in panic, a few are shot and tumbles down. I look around quickly.
+&quot;Grenade. [[GRENADE]]!&quot; Someone yells.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="48" name="GRENADE" tags="" position="4750,550" size="100,100">I pick up my eyes and there it is. Right in front of my is an Imperium stick grenade. It&#39;ll blow my face off, and the backs of these recruits. People begin to climb out of the trench in panic, a few are shot and tumbles down. I look around quickly.
 
 If I throw it back out I might harm my allies, that&#39;s not an option.
 
@@ -568,7 +1037,13 @@ I...
 
 [[Pick up the grenade and throw it into the storage]].
 
-[[Climb over the barricade and lay low]].</tw-passagedata><tw-passagedata pid="49" name="Limp over to the storage room and shut the door" tags="" position="4900,550" size="100,100">Without hesitation I limp towards the room with all my might.
+[[Climb over the barricade and lay low]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="49" name="Limp over to the storage room and shut the door" tags="" position="4900,550" size="100,100">Without hesitation I limp towards the room with all my might.
 
 Me
 &quot;Survive...&quot; I mutter, &quot;I will survive.&quot; I sling the door close behind me as I leap into the room. Right in that instant, the wooden door shatters and I am on the floor. My ears ring, as I turn I see the storage door have been blown clean off. As the dust settle I see...
@@ -583,7 +1058,13 @@ Staring down the barrel, I finally close my eyes. In that moment I think of...
 
 Clara Weiss, a liar. Or [[perhaps the princess]]?
 
-[[Myself]].</tw-passagedata><tw-passagedata pid="50" name="Pick up the grenade and throw it into the storage" tags="" position="4750,700" size="100,100">The storage should be far away enough, the grenade wouldn&#39;t harm anyone there. Right?
+[[Myself]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="50" name="Pick up the grenade and throw it into the storage" tags="" position="4750,700" size="100,100">The storage should be far away enough, the grenade wouldn&#39;t harm anyone there. Right?
 
 Right.
 
@@ -593,7 +1074,13 @@ I scramble on all fours and grab the explosive by its handle. My knees buckle as
 
 If only I am faster.
 
-I see black, my ears ring, my head throbs. I lie against the muddy walls of the trench, a blurry face in front of me. He is saying something, [[perhaps calling my name]].</tw-passagedata><tw-passagedata pid="51" name="Climb over the barricade and lay low" tags="" position="4750,400" size="100,100">With much difficulty, I leap over the barricade and lay on my stomach, hands over my head.
+I see black, my ears ring, my head throbs. I lie against the muddy walls of the trench, a blurry face in front of me. He is saying something, [[perhaps calling my name]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="51" name="Climb over the barricade and lay low" tags="" position="4750,400" size="100,100">With much difficulty, I leap over the barricade and lay on my stomach, hands over my head.
 
 Then the boom. It isn&#39;t a loud one. In fact... No damage is done. Several others and I hopp back into the trench. I look over to Finn... ...
 
@@ -619,7 +1106,13 @@ Must&#39;ve been the wind. My dry lips part as I croak &quot;Tell Finn... I say 
 &#39;&#39;&quot;Godspeed, Ember.&quot;&#39;&#39;
 
 ==&#39;&#39;THE END&#39;&#39;==
-(WIP)</tw-passagedata><tw-passagedata pid="52" name="Finn" tags="" position="5200,550" size="100,100">Finn... I hope he survives this.
+(WIP)
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="52" name="Finn" tags="" position="5200,550" size="100,100">Finn... I hope he survives this.
 
 Bureau of Sweethearts... It doesn&#39;t matter. Finn is the one next to me, being kind to me in this cruel world. He wants what is best for me, he sees me as a sibling.
 
@@ -636,7 +1129,13 @@ I hear the flapping of wings, and I see my familiar avian friend. The red pigeon
 Me
 &#39;&#39;&quot;Godspeed... Ember...&quot;&#39;&#39;
 
-==&#39;&#39;THE END&#39;&#39;==</tw-passagedata><tw-passagedata pid="53" name="perhaps the princess" tags="" position="5200,700" size="100,100">The only person that writes me anything in these trying times. Not even my family writes me. I don&#39;t even know if Clara is //Clara//. Maybe she IS the princess of the enemy country. Maybe this is all some sort of sick joke.
+==&#39;&#39;THE END&#39;&#39;==
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="53" name="perhaps the princess" tags="" position="5200,700" size="100,100">The only person that writes me anything in these trying times. Not even my family writes me. I don&#39;t even know if Clara is //Clara//. Maybe she IS the princess of the enemy country. Maybe this is all some sort of sick joke.
 
 Maybe Clara is Isolde, hiding in the States from the dictatorship that took over her country. Maybe a B.S. Agent made this entire thing up and I&#39;ve been writing to a 40 year old man.
 
@@ -656,7 +1155,13 @@ I hear the flapping of wings, and I see my familiar avian friend. The red pigeon
 Me
 &#39;&#39;&quot;Godspeed... Ember...&quot;&#39;&#39;
 
-==&#39;&#39;THE END&#39;&#39;==</tw-passagedata><tw-passagedata pid="54" name="Myself" tags="" position="5200,850" size="100,100">How did I end up here? Looking death in the eye. What exactly am I dying for? Or rather...
+==&#39;&#39;THE END&#39;&#39;==
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="54" name="Myself" tags="" position="5200,850" size="100,100">How did I end up here? Looking death in the eye. What exactly am I dying for? Or rather...
 
 What did I live for?
 
@@ -673,7 +1178,13 @@ I hear the flapping of wings, and I see my familiar avian friend. The red pigeon
 Me
 &#39;&#39;&quot;Godspeed... Ember...&quot;&#39;&#39;
 
-==&#39;&#39;THE END&#39;&#39;==</tw-passagedata><tw-passagedata pid="55" name="perhaps calling my name" tags="" position="4900,700" size="100,100">Finn
+==&#39;&#39;THE END&#39;&#39;==
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="55" name="perhaps calling my name" tags="" position="4900,700" size="100,100">Finn
 &quot;Alex-! Wh-- Were you th--king?!&quot; I can barely make out his voice, let alone see his face clearly.
 
 I try to respond. I can&#39;t. I try to move. Can&#39;t even lift a finger.
@@ -690,7 +1201,13 @@ Me
 
 [[&quot;Finn...&quot;]]
 
-[[Embrace silence]].</tw-passagedata><tw-passagedata pid="56" name="&quot;Clara...&quot;" tags="" position="5050,850" size="100,100">Me
+[[Embrace silence]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="56" name="&quot;Clara...&quot;" tags="" position="5050,850" size="100,100">Me
 I mutter faintly, &quot;Clara...&quot;
 
 Finn
@@ -709,7 +1226,13 @@ In my final moments I think of...
 
 Clara Weiss, my Sweetheart. Or [[perhaps the princess]]?
 
-[[Myself]].</tw-passagedata><tw-passagedata pid="57" name="&quot;Finn...&quot;" tags="" position="5050,700" size="100,100">Me
+[[Myself]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="57" name="&quot;Finn...&quot;" tags="" position="5050,700" size="100,100">Me
 I can barely hear my own voice, &quot;Finn...&quot;
 
 Finn
@@ -728,7 +1251,13 @@ In my final moments I think of...
 
 Clara Weiss, a liar. Or [[perhaps the princess]]?
 
-[[Myself]].</tw-passagedata><tw-passagedata pid="58" name="Embrace silence" tags="" position="5050,1000" size="100,100">Finn
+[[Myself]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="58" name="Embrace silence" tags="" position="5050,1000" size="100,100">Finn
 &quot;You stay with me.&quot; He props my head up, I can see his smile now. A bitter smile. A proud smile. A sad smile. &quot;We&#39;ll go home. We&#39;ll all go home and... We&#39;ll have a party at my pop&#39;s mansion. Fancy suits, pretty dresses, wine, and your dogwater stew.&quot; He chuckle stiffly.
 
 I try to grin.
@@ -744,21 +1273,45 @@ In my final moments I think of...
 
 Clara Weiss, a liar. Or [[perhaps the princess]]?
 
-[[Myself]].</tw-passagedata><tw-passagedata pid="59" name="I don&#39;t think I can be of much help" tags="" position="4200,50" size="100,100">I wander to the mess tent, a few others are preparing the meal, I decide to help out. There are less people than usual. We are cooking up some Godforsaken stew again. At this point I feel like a villian everytime I prepare these meals for everyone.
+[[Myself]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="59" name="I don&#39;t think I can be of much help" tags="" position="4200,50" size="100,100">I wander to the mess tent, a few others are preparing the meal, I decide to help out. There are less people than usual. We are cooking up some Godforsaken stew again. At this point I feel like a villian everytime I prepare these meals for everyone.
 
 People begin to show up, not Finn and his company though. I shall wait...
 
 [[Anxiously]].
 
-[[Calmly]].</tw-passagedata><tw-passagedata pid="60" name="Anxiously" tags="" position="4350,200" size="100,100">It is taking quite a long time. Stopping a small raid attempt should not take this long. 
+[[Calmly]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="60" name="Anxiously" tags="" position="4350,200" size="100,100">It is taking quite a long time. Stopping a small raid attempt should not take this long. 
 
 There&#39;s nothing I can do now. Just gotta pass the time I guess.
 
-I&#39;m just gonna [[Feed myself first]].</tw-passagedata><tw-passagedata pid="61" name="Calmly" tags="" position="4350,50" size="100,100">It&#39;ll be fine. Stuff like this happen. Finn will be a little late.
+I&#39;m just gonna [[Feed myself first]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="61" name="Calmly" tags="" position="4350,50" size="100,100">It&#39;ll be fine. Stuff like this happen. Finn will be a little late.
 
 I decide to...
 
-[[Feed myself first]].</tw-passagedata><tw-passagedata pid="62" name="Feed myself first" tags="" position="4500,50" size="100,100">It is still quite loud, but it feels quiet without Finn. I sit alone. The stew is warm, but it doesn&#39;t mean it&#39;s good. Slightly on the sweeter side today, which is a change.
+[[Feed myself first]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="62" name="Feed myself first" tags="" position="4500,50" size="100,100">It is still quite loud, but it feels quiet without Finn. I sit alone. The stew is warm, but it doesn&#39;t mean it&#39;s good. Slightly on the sweeter side today, which is a change.
 
 Speaking of sweet. I can finally put my Sweetheart&#39;s name to a face! I can [[inspect Clara&#39;s picture some more]].
 
@@ -768,7 +1321,13 @@ Some Guy
 Some Other Guy
 &quot;Hah! Her nose looks like sh#t. She looks like Beetooven.&quot; His friend responds &quot;Besides, it&#39;s just a rumor. Even if it&#39;s true, Moosevelt will keep it hush.&quot;
 
-Maybe I should [[keep listening]]. But who cares about royals and their lives?</tw-passagedata><tw-passagedata pid="63" name="inspect Clara&#39;s picture some more" tags="" position="4650,50" size="100,100">I pull out her photo once again.
+Maybe I should [[keep listening]]. But who cares about royals and their lives?
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="63" name="inspect Clara&#39;s picture some more" tags="" position="4650,50" size="100,100">I pull out her photo once again.
 
 &#39;&#39;Clara Picture Here&#39;&#39;
 
@@ -783,7 +1342,13 @@ Some Dude
 
 What the? Wait. Callahan is back? Then Finn should be back. Is this about me not helping out in the trenches? Damn.
 
-I guess I have to [[meet Callahan]].</tw-passagedata><tw-passagedata pid="64" name="keep listening" tags="" position="4650,200" size="100,100">I keep listening.
+I guess I have to [[meet Callahan]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="64" name="keep listening" tags="" position="4650,200" size="100,100">I keep listening.
 
 Some Guy
 &quot;Of course the princess would offer a sob story. And Mooselvelt will offer shelter.&quot; The voice behind me continued. &quot;But letting the press know about this? That&#39;s risky, considering both her and her family are rich, spoiled liars.&quot;
@@ -798,7 +1363,13 @@ This Princess Isolde... She sounds...
 
 [[Lonely]].
 
-[[Dangerous]].</tw-passagedata><tw-passagedata pid="65" name="meet Callahan" tags="" position="4950,50" size="100,100">I limp towards the command tent.
+[[Dangerous]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="65" name="meet Callahan" tags="" position="4950,50" size="100,100">I limp towards the command tent.
 
 Finn?
 &quot;Alex!&quot; A voice call out, I turn and saw...
@@ -817,7 +1388,13 @@ Me
 Finn
 &quot;Well, worth a try.&quot; He shrugs, &quot;Callahan just looks scary, you should be okay.&quot;
 
-I [[head over to see Callahan]].</tw-passagedata><tw-passagedata pid="66" name="Lonely" tags="" position="4800,250" size="100,100">If she really is a refugee in the States now, imagine how hard it would be for her. Alone, in a nation that hates her family because they think her father is either weak, evil, or both. Maybe this Princess Isolde is very muchlike me. Maybe she just wants a friend or a person to love in this unloving world.
+I [[head over to see Callahan]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="66" name="Lonely" tags="" position="4800,250" size="100,100">If she really is a refugee in the States now, imagine how hard it would be for her. Alone, in a nation that hates her family because they think her father is either weak, evil, or both. Maybe this Princess Isolde is very muchlike me. Maybe she just wants a friend or a person to love in this unloving world.
 
 I continue to eat.
 
@@ -826,7 +1403,13 @@ Some Dude
 
 What the? Wait. Callahan is back? Then Finn should be back. Is this about me not helping out in the trenches? Damn.
 
-I guess I have to [[meet Callahan]].</tw-passagedata><tw-passagedata pid="67" name="Dangerous" tags="" position="4800,100" size="100,100">Why would she come to the States? Maybe she is escaping from the Imperium? They must not like her family too much there, saying the royals oppressed them and such. Sort of how the war started.
+I guess I have to [[meet Callahan]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="67" name="Dangerous" tags="" position="4800,100" size="100,100">Why would she come to the States? Maybe she is escaping from the Imperium? They must not like her family too much there, saying the royals oppressed them and such. Sort of how the war started.
 
 But the States hate her family even more. Man, I don&#39;t understand. Maybe she IS a spy. Maybe she&#39;s here to sabotage our military efforts, or to sway our political policies. I don&#39;t know.
 
@@ -837,7 +1420,13 @@ Some Dude
 
 What the? Wait. Callahan is back? Then Finn should be back. Is this about me not pulling my weight in the trenches? Damn.
 
-I guess I have to [[meet Callahan]].</tw-passagedata><tw-passagedata pid="68" name="head over to see Callahan" tags="" position="5100,50" size="100,100">The Sergeant sat behind a desk, a mug of coffee in his hand. Coffee, at night. Interesting.
+I guess I have to [[meet Callahan]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="68" name="head over to see Callahan" tags="" position="5100,50" size="100,100">The Sergeant sat behind a desk, a mug of coffee in his hand. Coffee, at night. Interesting.
 
 Sgt. Callahan
 &quot;Alex Donovan?&quot; He says with a gruff voice.
@@ -858,7 +1447,13 @@ I should say something...
 
 &quot;[[Just another day, sir. Nothing special]].&quot;
 
-[[Remain silent]].</tw-passagedata><tw-passagedata pid="69" name="I wish I was there, but my leg is killing me" tags="" position="5250,50" size="100,100">Sgt. Callahan
+[[Remain silent]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="69" name="I wish I was there, but my leg is killing me" tags="" position="5250,50" size="100,100">Sgt. Callahan
 &quot;I know.&quot; He nods, &quot;Kid, don&#39;t say that. You don&#39;t want to be there.&quot; A pause, then he smiles, &quot;I like your stew. Best of the best.&quot;
 
 Me
@@ -878,7 +1473,13 @@ Sgt. Callahan
 
 &quot;[[She&#39;s a friend, sir]].&quot;
 
-&quot;[[How did you know?]]&quot;</tw-passagedata><tw-passagedata pid="70" name="Just another day, sir. Nothing special" tags="" position="5250,200" size="100,100">Sgt. Callahan
+&quot;[[How did you know?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="70" name="Just another day, sir. Nothing special" tags="" position="5250,200" size="100,100">Sgt. Callahan
 He stares into my eyes. A pause, &quot;Don&#39;t lie to me Donovan.&quot;
 
 Me
@@ -898,7 +1499,13 @@ Sgt. Callahan
 
 &quot;[[She&#39;s a friend, sir]].&quot;
 
-&quot;[[How did you know?]]&quot;</tw-passagedata><tw-passagedata pid="71" name="Remain silent" tags="" position="5250,350" size="100,100">He breaks silence.
+&quot;[[How did you know?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="71" name="Remain silent" tags="" position="5250,350" size="100,100">He breaks silence.
 
 Sgt. Callahan
 &quot;Now, be honest with me, kid.&quot; He sighs.
@@ -915,7 +1522,13 @@ Sgt. Callahan
 
 &quot;[[She&#39;s a friend, sir]].&quot;
 
-&quot;[[How did you know?]]&quot;</tw-passagedata><tw-passagedata pid="72" name="No, sir" tags="" position="5400,50" size="100,100">Me
+&quot;[[How did you know?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="72" name="No, sir" tags="" position="5400,50" size="100,100">Me
 &quot;Never heard of her, sir.&quot; I croak.
 
 Callahan rises from his chair, he sighed deeply. In a casual motion he slides his pistol out of its holster. In another second I am staring down the barrel.
@@ -926,7 +1539,13 @@ Sgt. Callahan
 Me
 &quot;[[Y-Yes, but that&#39;s how it&#39;s supposed to be. B.S. just connects people, not deliver letters!]]&quot;
 
-&quot;[[No sir, I don&#39;t know this woman]].&quot;</tw-passagedata><tw-passagedata pid="73" name="She&#39;s a friend, sir" tags="" position="5400,200" size="100,100">Me
+&quot;[[No sir, I don&#39;t know this woman]].&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="73" name="She&#39;s a friend, sir" tags="" position="5400,200" size="100,100">Me
 &quot;I met her through the Bureau of Sweethearts, sir.&quot; I croak, &quot;I would say we are friends.&quot;
 
 Callahan rises from his chair, he sighed deeply. In a casual motion he slides his pistol out of its holster. In another second I am staring down the barrel.
@@ -937,7 +1556,13 @@ Sgt. Callahan
 Me
 &quot;[[Y-Yes, but that&#39;s how it&#39;s supposed to be. B.S. just connects people, not deliver letters!]]&quot;
 
-&quot;[[No sir, I don&#39;t know this woman]] well. We just exchanged some letters, nothing more!&quot;</tw-passagedata><tw-passagedata pid="74" name="How did you know?" tags="" position="5400,350" size="100,100">Me
+&quot;[[No sir, I don&#39;t know this woman]] well. We just exchanged some letters, nothing more!&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="74" name="How did you know?" tags="" position="5400,350" size="100,100">Me
 &quot;This is an invasion of privacy, sir.&quot; I croak &quot;How did you know?&quot;
 
 Callahan rises from his chair, he sigh deeply. In a casual motion he slides his pistol out of its holster. In another second I am staring down the barrel.
@@ -946,10 +1571,22 @@ Sgt. Callahan
 &quot;Are you exchanging letters with this woman outside of the Bureau of Sweetheart&#39;s supervision?&quot;
 
 Me
-&quot;[[Y-Yes, but that&#39;s how it&#39;s supposed to be. B.S. just connects people, not deliver letters!]]&quot;</tw-passagedata><tw-passagedata pid="75" name="No sir, I don&#39;t know this woman" tags="" position="5550,200" size="100,100">Callahan stare into my eyes with a cutting gaze. His lips flatten into something of a smile. &quot;You are not to speak of anything about this woman to anyone. If you have anything from Ms. Weiss, bring them over to me. Lastly, never write to her again.&quot; A long pause. &quot;Understood?&quot;
+&quot;[[Y-Yes, but that&#39;s how it&#39;s supposed to be. B.S. just connects people, not deliver letters!]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="75" name="No sir, I don&#39;t know this woman" tags="" position="5550,200" size="100,100">Callahan stare into my eyes with a cutting gaze. His lips flatten into something of a smile. &quot;You are not to speak of anything about this woman to anyone. If you have anything from Ms. Weiss, bring them over to me. Lastly, never write to her again.&quot; A long pause. &quot;Understood?&quot;
 
 Me
-&quot;[[Yes, sir.]]&quot;</tw-passagedata><tw-passagedata pid="76" name="Y-Yes, but that&#39;s how it&#39;s supposed to be. B.S. just connects people, not deliver letters!" tags="" position="5550,50" size="100,100">The gun remain in my face &quot;Tell me all you know about Ms. Weiss.&quot;
+&quot;[[Yes, sir.]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="76" name="Y-Yes, but that&#39;s how it&#39;s supposed to be. B.S. just connects people, not deliver letters!" tags="" position="5550,50" size="100,100">The gun remain in my face &quot;Tell me all you know about Ms. Weiss.&quot;
 
 I gulp... 
 
@@ -958,17 +1595,35 @@ Me
 
 &quot;[[Is there something I should know about her?]]&quot;
 
-&quot;[[She&#39;s Princess Isolde, isn&#39;t she?]]&quot;</tw-passagedata><tw-passagedata pid="77" name="She&#39;s 24, a translator in Mashington. I think she&#39;s good looking" tags="" position="5700,200" size="100,100">Sgt. Callahan
+&quot;[[She&#39;s Princess Isolde, isn&#39;t she?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="77" name="She&#39;s 24, a translator in Mashington. I think she&#39;s good looking" tags="" position="5700,200" size="100,100">Sgt. Callahan
 His lips flatten into something of a smile &quot;You are not to speak of anything about this woman to anyone. If you have anything from Ms. Weiss, bring them over to me Immediately. Lastly, never write to her again.&quot; A long pause. &quot;Understood?&quot;
 
 Me
-&quot;[[Yes, sir.]]&quot;</tw-passagedata><tw-passagedata pid="78" name="Is there something I should know about her?" tags="" position="5700,50" size="100,100">Sgt. Callahan
+&quot;[[Yes, sir.]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="78" name="Is there something I should know about her?" tags="" position="5700,50" size="100,100">Sgt. Callahan
 Callahan seems displeased &quot;Know that I know more than you know. Now, speak.&quot;
 
 Me
 &quot;[[She&#39;s 24, a translator in Mashington. I think she&#39;s good looking]].&quot;
 
-&quot;[[She&#39;s Princess Isolde, isn&#39;t she?]]&quot;</tw-passagedata><tw-passagedata pid="79" name="She&#39;s Princess Isolde, isn&#39;t she?" tags="" position="5700,350" size="100,100">Sgt. Callahan
+&quot;[[She&#39;s Princess Isolde, isn&#39;t she?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="79" name="She&#39;s Princess Isolde, isn&#39;t she?" tags="" position="5700,350" size="100,100">Sgt. Callahan
 &quot;Private A. Donovan.&quot; His voice is flat. Two guards appear behind me, armed. &quot;You are under arrest.&quot;
 
 I AM WHAT?! I AM UNDER WHAT?
@@ -982,7 +1637,13 @@ We shall see...
 ... ... Clara is the WHAT?
 
 ==&#39;&#39;THE END&#39;&#39;==
-(WIP)</tw-passagedata><tw-passagedata pid="80" name="Yes, sir." tags="" position="5575,350" size="100,100">Sgt. Callahan
+(WIP)
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="80" name="Yes, sir." tags="" position="5550,350" size="100,100">Sgt. Callahan
 Callahan lowers his gun, &quot;Dismissed.&quot;
 
 I leave the tent unharmed.
@@ -1014,7 +1675,13 @@ Just then I heard the beating of wings overhead, I look up and smile.
 &quot;Godspeed, Ember.&quot;
 
 ==&#39;&#39;THE END&#39;&#39;==
-(WIP)</tw-passagedata><tw-passagedata pid="81" name="write Misha back" tags="" position="750,700" size="100,100">I fetch a pen and paper and head towards a nearby stool. Time to respond to this Red Army gal. 
+(WIP)
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="81" name="write Misha back" tags="" position="750,700" size="100,100">I fetch a pen and paper and head towards a nearby stool. Time to respond to this Red Army gal. 
 
 I can flip back to see [[Marína &quot;Misha&quot; Volkova]]&#39;s letter.
 
@@ -1027,9 +1694,15 @@ What should I write about? She seems care free. Wait, no, there must be a lot on
 [[Talk about who I was]].
 
 [[Sound mysterious]].
-
-</tw-passagedata><tw-passagedata pid="82" name="Starting Variables" tags="startup" position="50,50" size="100,100">{
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="82" name="Starting Variables" tags="startup" position="50,50" size="100,100">{
 &lt;!-- starting variables for the game - everything here is initialized on load and nothing is seen here --&gt;
+
+(set: $playerGender to 0) &lt;!-- set to 1 if male is selected --&gt;
 
 (set: $mainRecipient to &quot;&quot;)
 
@@ -1037,7 +1710,23 @@ What should I write about? She seems care free. Wait, no, there must be a lot on
 
 (set: $letterChoice to 0)
 (set: $letterChoiceHistory to (a: ))
-}</tw-passagedata><tw-passagedata pid="83" name="Third Sweetheart" tags="" position="600,1200" size="100,100">WIP</tw-passagedata><tw-passagedata pid="84" name="pigeon post (sound smart)" tags="Try-to-sound-smart" position="3300,200" size="100,100">There he is, that dammned silver pigeon! Quicksilver&#39;s gaze is unwavering, he coos softly as I take hold of him. I pop open the tube on his back, my fingers moving fast to uncurl the scroll. I read so quick I was holding my breath.
+
+&lt;!-- copy paste for portraits
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/portraitLeft.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/portraitLeft.png&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/portraitRight.png&quot;&gt;&lt;/div&gt;
+}
+--&gt;
+}</tw-passagedata><tw-passagedata pid="83" name="Third Sweetheart" tags="" position="600,1200" size="100,100">WIP
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="84" name="pigeon post (sound smart)" tags="Try-to-sound-smart" position="3300,200" size="100,100">There he is, that dammned silver pigeon! Quicksilver&#39;s gaze is unwavering, he coos softly as I take hold of him. I pop open the tube on his back, my fingers moving fast to uncurl the scroll. I read so quick I was holding my breath.
 
 &quot;Dear Alex,
 	You delight me! My letter like a prodigious tome? Surely, I am not so grand. My days are filled with shuffling papers and puzzling over dispatches. I assure you, this does not feel like the heroic labor of a wartime translator. But, you and I, we keep the wheels turning. 
@@ -1052,7 +1741,13 @@ Wow- Maybe Clara is real. But is she too over the top? We are only a few letters
 
 I look into the message tube.
 
-Wait, [[there&#39;s more]].</tw-passagedata><tw-passagedata pid="85" name="pigeon post (before war)" tags="Me-before-war" position="3300,350" size="100,100">There he is, that dammned silver pigeon! Quicksilver&#39;s gaze is unwavering, he coos softly as I take hold of him. I pop open the tube on his back, my fingers moving fast to uncurl the scroll. I read so quick I was holding my breath.
+Wait, [[there&#39;s more]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="85" name="pigeon post (before war)" tags="Me-before-war" position="3300,350" size="100,100">There he is, that dammned silver pigeon! Quicksilver&#39;s gaze is unwavering, he coos softly as I take hold of him. I pop open the tube on his back, my fingers moving fast to uncurl the scroll. I read so quick I was holding my breath.
 
 &quot;Dear Alex,
 	Your relationship with your family sounds complicated. But I know for sure your loved ones will be overjoyed to see you again. I know it. My family is broken and separated because of the war, but I know my parents love me still, even after all that has happened.
@@ -1068,15 +1763,23 @@ Wow- Maybe Clara is real. But is she too over the top? We are only a few letters
 
 I look into the message tube.
 
-Wait, [[there&#39;s more]].</tw-passagedata><tw-passagedata pid="86" name="Option A" tags="Alex-Male" position="300,500" size="100,100">Ah, dashing as always. Let&#39;s get back to it.
+Wait, [[there&#39;s more]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="86" name="Choice Made" tags="" position="450,350" size="100,100">Ah, (if: $playerGender is 0)[beautiful](else:)[dashing] as always. Let&#39;s get back to it.
 
 The pigeon coop creak open. And I&#39;ll be damnned.
 
-Three [[pigeons]]. For me. At the same time.</tw-passagedata><tw-passagedata pid="87" name="Option B" tags="Alex-Female" position="450,500" size="100,100">Ah, beautiful as always. Let&#39;s get back to it.
-
-The pigeon coop creak open. And I&#39;ll be damnned.
-
-Three [[pigeons]]. For me. At the same time.</tw-passagedata><tw-passagedata pid="88" name="Talk about how I am now" tags="" position="900,700" size="100,100">Let&#39;s see... I should write about where I am now. Maybe what we are experiencing are similar.
+Three [[pigeons]]. For me. At the same time.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="87" name="Talk about how I am now" tags="" position="900,700" size="100,100">Let&#39;s see... I should write about where I am now. Maybe what we are experiencing are similar.
 
 &quot;Hello Ms. Volkova,
 	It is good to hear from you. The relations between our countries is shaky, but we get to write each other. Not bad. My leg is wounded by shrapnel, so I am stuck with cooking duties and moving supply crates in camp. It is what it is. At least it doesn&#39;t snow here, I take it you don&#39;t like snow?
@@ -1091,7 +1794,25 @@ Something like this... Right? I think this works. But this war is not a happy su
 
 [[Send my first response to Misha]].
 
-Think about how to [[write Misha back]] some more.</tw-passagedata><tw-passagedata pid="89" name="Talk about who I was" tags="" position="900,850" size="100,100">WIP</tw-passagedata><tw-passagedata pid="90" name="Sound mysterious" tags="" position="900,1000" size="100,100">WIP</tw-passagedata><tw-passagedata pid="91" name="Send my first response to Misha" tags="" position="1050,700" size="100,100">I roll the letter up as carefully as I can and slide it into a tube. I reach for my trusty avian friend: Ember.
+Think about how to [[write Misha back]] some more.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="88" name="Talk about who I was" tags="" position="900,850" size="100,100">WIP
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="89" name="Sound mysterious" tags="" position="900,1000" size="100,100">WIP
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="90" name="Send my first response to Misha" tags="" position="1050,700" size="100,100">I roll the letter up as carefully as I can and slide it into a tube. I reach for my trusty avian friend: Ember.
 
 Ember&#39;s a sweetheart, her redish coat earned her the name. There were times I would just hold her and feel her warmth. As she coo gently, It is like I am holding my own heart.
 
@@ -1099,7 +1820,13 @@ I strap the letter tube to her back and look into her deep brown eyes.
 
 &quot;[[Godspeed, Ember.]]&quot;
 
-And off she goes, the sound of her wings clapping through crisp air.</tw-passagedata><tw-passagedata pid="92" name="Godspeed, Ember." tags="" position="1200,700" size="100,100">Now that&#39;s done, I must prep for dinner...
+And off she goes, the sound of her wings clapping through crisp air.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="91" name="Godspeed, Ember." tags="" position="1200,700" size="100,100">Now that&#39;s done, I must prep for dinner...
 
 As the sun begin to set I see the laddies and lassies making their way toward the serving line. Judging by their looks everything is normal. Another terrible day in the trenches, no advancment, no excitment, no peace, only constant, numbing fear. I wonder if Misha&#39;s experiencing the same thing.
 
@@ -1112,7 +1839,13 @@ After that, I scoop into my own bowl, I grab a slice of stale bread from another
 Finn
 &quot;Alex!&quot; He waves, his voice weary but still hold rare enthuthiasim.
 
-I [[take a seat next to Finn]].</tw-passagedata><tw-passagedata pid="93" name="take a seat next to Finn" tags="" position="1350,700" size="100,100">Me
+I [[take a seat next to Finn]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="92" name="take a seat next to Finn" tags="" position="1350,700" size="100,100">Me
 &quot;So how was the trenches?&quot;
 
 FInn
@@ -1135,9 +1868,21 @@ Me
 
 We finish dinner. Didn&#39;t have the chance to talk about Misha... Oh well, I shouldn&#39;t obsess over this girl I barely know.
 
-There was nothing much more to do, [[let&#39;s end the day]].</tw-passagedata><tw-passagedata pid="94" name="let&#39;s end the day" tags="" position="1500,700" size="100,100">I sleep alright. Until some lassie woke up in the middle of the night, bawling. She must&#39;ve been one of the newer recruits. I&#39;m not bothered, she is pretty far away from me.
+There was nothing much more to do, [[let&#39;s end the day]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="93" name="let&#39;s end the day" tags="" position="1500,700" size="100,100">I sleep alright. Until some lassie woke up in the middle of the night, bawling. She must&#39;ve been one of the newer recruits. I&#39;m not bothered, she is pretty far away from me.
 
-Okay, I swear her bawling does not bother me, but maybe I should [[go check on her]].</tw-passagedata><tw-passagedata pid="95" name="go check on her" tags="" position="1650,700" size="100,100">So, the day continues. I step into my cold boots and drag myself towards where the sobbing is coming from.
+Okay, I swear her bawling does not bother me, but maybe I should [[go check on her]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="94" name="go check on her" tags="" position="1650,700" size="100,100">So, the day continues. I step into my cold boots and drag myself towards where the sobbing is coming from.
 
 There she is, a woman sitting on a bench. She looks my age, maybe a bit younger? Doesn&#39;t matter. She has her hands clasped as her tears fall onto her knuckles. I approach quietly, noticing a crumbled note next to where she sits. Now I am close enough I see what she is holding in her hands: Prayer beads.
 
@@ -1145,7 +1890,13 @@ Crying Woman
 &quot;Why?&quot; She cries as if pleading, &quot;Why..? Why him?&quot;
 
 Me
-&quot;[[What&#39;s wrong?]]&quot;</tw-passagedata><tw-passagedata pid="96" name="What&#39;s wrong?" tags="" position="1800,700" size="100,100">Me
+&quot;[[What&#39;s wrong?]]&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="95" name="What&#39;s wrong?" tags="" position="1800,700" size="100,100">Me
 &quot;Are you alright?&quot; I smile stiffly and humorlessly.
 
 The woman turns quickly as she smudge the tears from her face with the back of her hand. She returns a smile.
@@ -1163,7 +1914,13 @@ Crying Woman
 Me
 &quot;[[Justice is patience. Love is patience. Faith, is also patience]].&quot;
 
-&quot;[[Justice is loving those who deserve loving, and hating those who deserve hating]].&quot;</tw-passagedata><tw-passagedata pid="97" name="Justice is patience. Love is patience. Faith, is also patience" tags="" position="1950,700" size="100,100">Her lips trembles as tears flood from her eyes. She nods and the looks down again.
+&quot;[[Justice is loving those who deserve loving, and hating those who deserve hating]].&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="96" name="Justice is patience. Love is patience. Faith, is also patience" tags="" position="1950,700" size="100,100">Her lips trembles as tears flood from her eyes. She nods and the looks down again.
 
 Me
 &quot;I am sorry for your loss.&quot; I croak &quot;This war has taken too much.&quot;
@@ -1184,7 +1941,13 @@ I nod and stand.
 Me
 &quot;Take it easy now.&quot;
 
-Then after saying good night, I [[return to my bunk]].</tw-passagedata><tw-passagedata pid="98" name="Justice is loving those who deserve loving, and hating those who deserve hating" tags="" position="1950,850" size="100,100">Her eyes lights up, a spark of flame in her sorrowful gaze. She looks down, squeezing her prayer beads until her knuckles turn white.
+Then after saying good night, I [[return to my bunk]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="97" name="Justice is loving those who deserve loving, and hating those who deserve hating" tags="" position="1950,850" size="100,100">Her eyes lights up, a spark of flame in her sorrowful gaze. She looks down, squeezing her prayer beads until her knuckles turn white.
 
 Me
 &quot;We are soldiers. They take one of us, we take ten of them.&quot; I croak.
@@ -1209,11 +1972,23 @@ I nod and stand.
 Me
 &quot;Take care.&quot;
 
-Then after saying good night, I [[return to my bunk]].</tw-passagedata><tw-passagedata pid="99" name="return to my bunk" tags="" position="2100,700" size="100,100">I climb into bed, smiling to myself. I helped someone, I think. This Ruth seems like a nice person. Maybe I should chat with her during better circumstances. I hope I see her again.
+Then after saying good night, I [[return to my bunk]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="98" name="return to my bunk" tags="" position="2100,700" size="100,100">I climb into bed, smiling to myself. I helped someone, I think. This Ruth seems like a nice person. Maybe I should chat with her during better circumstances. I hope I see her again.
 
 Night passes.
 
-[[Morning comes]].</tw-passagedata><tw-passagedata pid="100" name="Morning comes" tags="" position="2250,700" size="100,100">Breakfast time. Yay-
+[[Morning comes]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="99" name="Morning comes" tags="" position="2250,700" size="100,100">Breakfast time. Yay-
 
  I stand in line to destribute breakfast. Flaky biscuits with painfully sweet jam. Not terrible. Breakfast is always quick. People usually just grab and go.
 
@@ -1231,18 +2006,36 @@ Okay, I&#39;m done. Now I should...
 
 [[Let the day pass]].
 
-[[Wait, check on the pigeon post]]!</tw-passagedata><tw-passagedata pid="101" name="Let the day pass" tags="" position="2400,700" size="100,100">I got on my bunk, I sleep. I wake up. I do breakfast duty. I hual crates. I crack open cans of tin meat for lunch prep. Man the stew is smelling... Painfully delicious.
+[[Wait, check on the pigeon post]]!
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="100" name="Let the day pass" tags="" position="2400,700" size="100,100">I got on my bunk, I sleep. I wake up. I do breakfast duty. I hual crates. I crack open cans of tin meat for lunch prep. Man the stew is smelling... Painfully delicious.
 
 Finn is on rotation, so he&#39;s here for lunch. I should go [[chat with him]].
 
-On second thought... [[Maybe Misha wrote back]], let me go check.</tw-passagedata><tw-passagedata pid="102" name="Wait, check on the pigeon post" tags="" position="2400,850" size="100,100">I walk over to the pigeon post, my bad leg slightly dragging. I open the coop, and Ember&#39;s there. Wait, she&#39;s back already? I guess where I am in the Central Continent is not that far from the Eastern Front. Ember doesn&#39;t have a letter for me though, she carries an empty tube.
+On second thought... [[Maybe Misha wrote back]], let me go check.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="101" name="Wait, check on the pigeon post" tags="" position="2400,850" size="100,100">I walk over to the pigeon post, my bad leg slightly dragging. I open the coop, and Ember&#39;s there. Wait, she&#39;s back already? I guess where I am in the Central Continent is not that far from the Eastern Front. Ember doesn&#39;t have a letter for me though, she carries an empty tube.
 
 Did I mess it up with Misha? I lost my chance haven&#39;t I? Maybe I should consider writing to one of the other Sweethearts...
 
 A Man
 &quot;Donovan! Food time!&quot;
 
-Right... I have stuff to do. Well, the rest of today will be a bore. I&#39;m just gonna... [[Let the day pass]].</tw-passagedata><tw-passagedata pid="103" name="chat with him" tags="" position="2550,700" size="100,100">I sit next to Finn, who greets me with a nod. That&#39;s werid, he&#39;s usually talkative.
+Right... I have stuff to do. Well, the rest of today will be a bore. I&#39;m just gonna... [[Let the day pass]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="102" name="chat with him" tags="" position="2550,700" size="100,100">I sit next to Finn, who greets me with a nod. That&#39;s werid, he&#39;s usually talkative.
 
 Finn
 &quot;Saw some guy die today. Died in my hands.&quot; He eventually sighs &quot;Didn&#39;t know him well, but I cannot express just how much I wish he is still alive.&quot;
@@ -1268,7 +2061,13 @@ Finn
 Me
 &quot;[[I do what I want]]!&quot;
 
-&quot;[[Maybe I just like writing letters]], okay?&quot;</tw-passagedata><tw-passagedata pid="104" name="Maybe Misha wrote back" tags="" position="2850,700" size="100,100">I finish my now delicious lunch and hurry over to the pigeon post. If Finn is right and the Eastern Front is not that far, then there is a chance I will get Misha&#39;s letter today!
+&quot;[[Maybe I just like writing letters]], okay?&quot;
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="103" name="Maybe Misha wrote back" tags="" position="2850,700" size="100,100">I finish my now delicious lunch and hurry over to the pigeon post. If Finn is right and the Eastern Front is not that far, then there is a chance I will get Misha&#39;s letter today!
 
 What&#39;s with this excitment? I feel like a child.
 
@@ -1279,7 +2078,13 @@ Me
 
 But there she is! Misha&#39;s pigeon, next to Ember! Without hesitation I retrieve the letter from the smaller avian&#39;s back. She&#39;s trembling, but doesn&#39;t resist against my touch.
 
-I [[read Misha&#39;s second letter]], mumbling the words.</tw-passagedata><tw-passagedata pid="105" name="I do what I want" tags="" position="2700,700" size="100,100">Me
+I [[read Misha&#39;s second letter]], mumbling the words.
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="104" name="I do what I want" tags="" position="2700,700" size="100,100">Me
 &quot;I do what I want!&quot;
 
 Finn
@@ -1297,7 +2102,13 @@ Me
 Finn
 He is suddenly excited &quot;Go check then. Maybe her response letter is already here! Maybe it&#39;s a confession that she&#39;s a secret agent from Mashington!&quot;
 
-I chuckle dryly. Huh... [[Maybe Misha wrote back]].</tw-passagedata><tw-passagedata pid="106" name="Maybe I just like writing letters" tags="" position="2700,850" size="100,100">Me
+I chuckle dryly. Huh... [[Maybe Misha wrote back]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="105" name="Maybe I just like writing letters" tags="" position="2700,850" size="100,100">Me
 &quot;Maybe I&#39;m just bored to death here and I want to write to someone who actually writes back.&quot; I snap.
 
 Finn
@@ -1315,7 +2126,18 @@ Me
 Finn
 He is suddenly excited &quot;Go check then. Maybe her response letter is already here! Maybe it&#39;s a confession that she&#39;s a secret agent from Mashington!&quot;
 
-I chuckle dryly. Huh... [[Maybe Misha wrote back]].</tw-passagedata><tw-passagedata pid="107" name="read Misha&#39;s second letter" tags="" position="3000,700" size="100,100"></tw-passagedata></tw-storydata>
+I chuckle dryly. Huh... [[Maybe Misha wrote back]].
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="106" name="read Misha&#39;s second letter" tags="" position="3000,700" size="100,100">{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.png&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.png&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
