@@ -785,8 +785,6 @@ Wait, [[there&#39;s more]].
 &lt;/div&gt;
 }</tw-passagedata><tw-passagedata pid="35" name="there&#39;s more" tags="" position="3450,50" size="100,100">Rolled up neatly but stiffly is a picture of a young woman. She&#39;s wearing a faded Union scarf over a simple blouse. Her eyes sharp but her lips curved into a gentle smile.
 
-&#39;&#39;Clara Picture Here&#39;&#39;
-
 Though her features seemed upright and pleasant, the subtle wrinkles beneath her eyes and on her forehead might have been the result of the tense atmosphere she was in. Her tall nose resembled that of a marble statue.
 
 I stare at the photo with unblinking eyes. By the looks of it, Clara is stressed and weary with a lot on her mind, at least she was when the photo was taken. But in the end... she&#39;s beautiful.
@@ -799,7 +797,7 @@ I make my way back to the main camp with long strides. I have [[boxes to hual]].
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
 (else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/clara.PNG&quot;&gt;&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/clara_photo.JPG&quot;&gt;&lt;/div&gt;
 }</tw-passagedata><tw-passagedata pid="36" name="boxes to hual" tags="" position="3600,50" size="100,100">Boring job, hauling boxes. But my heart beat just a little fast than usual with Clara&#39;s letter and photo in my pocket. I hope a dumb grin isn&#39;t on my face.
 
 Then here comes Finn. Finn? Here? Now?
@@ -1377,6 +1375,7 @@ I guess I have to [[meet Callahan]].
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
 (else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
 &lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/clara_photo.JPG&quot;&gt;&lt;/div&gt;
 }</tw-passagedata><tw-passagedata pid="64" name="keep listening" tags="" position="4650,200" size="100,100">I keep listening.
 
 Some Guy
@@ -1887,6 +1886,7 @@ There was nothing much more to do, [[let&#39;s end the day]].
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
 (else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
 &lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 }</tw-passagedata><tw-passagedata pid="90" name="let&#39;s end the day" tags="" position="1500,700" size="100,100">I sleep alright. Until some lassie woke up in the middle of the night, bawling. She must&#39;ve been one of the newer recruits. I&#39;m not bothered, she is pretty far away from me.
 
 Okay, I swear her bawling does not bother me, but maybe I should [[go check on her]].
@@ -2462,7 +2462,14 @@ I smile as my hand tremble. I...
 
 [[Find Finn]].
 
-[[I need to cook]].</tw-passagedata><tw-passagedata pid="122" name="Find Finn" tags="" position="4350,1000" size="100,100">I limp around the camp, trying to find my friend. Then there he is. He is lined up with a few others. A lot, of others.
+[[I need to cook]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="122" name="Find Finn" tags="" position="4350,1000" size="100,100">I limp around the camp, trying to find my friend. Then there he is. He is lined up with a few others. A lot, of others.
 
 I stand there in silence. It seems like Sergeant Mason is briefing them about something. Finn&#39;s eyes meets with mine.
 
@@ -2475,7 +2482,15 @@ Me
 A voice
 &quot;What is your name Private?&quot;
 
-I turn to see [[Sergeant Callahan]]. The scary one.</tw-passagedata><tw-passagedata pid="123" name="I need to cook" tags="" position="4200,1150" size="100,100">I stare down into the pot as I mashed tinned chicken meat with a spatula. I begin to stir.
+I turn to see [[Sergeant Callahan]]. The scary one.
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="123" name="I need to cook" tags="" position="4200,1150" size="100,100">I stare down into the pot as I mashed tinned chicken meat with a spatula. I begin to stir.
 
 My leg throbs in subtle pain.
 
@@ -2491,12 +2506,26 @@ I stir.
 
 We are at war, Finn might die, my sergeants might die. Everyone is risking it all. Even Ember is trying her hardest. Not me. I can do nothing.
 
-[[I stir]].</tw-passagedata><tw-passagedata pid="124" name="I stir" tags="" position="4350,1150" size="100,100">I sigh again. I really do feel useless. We are in such a dire situation and all I can do is STIR STEW? NO ONE LIKES THIS FU*KING STEW! NO ONE LIKES M-
+[[I stir]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="124" name="I stir" tags="" position="4350,1150" size="100,100">I sigh again. I really do feel useless. We are in such a dire situation and all I can do is STIR STEW? NO ONE LIKES THIS FU*KING STEW! NO ONE LIKES M-
 
 A voice
 &quot;What is your name Private?&quot;
 
-I turn to see [[Sergeant Callahan]]. The scary one.</tw-passagedata><tw-passagedata pid="125" name="Sergeant Callahan" tags="" position="4500,1000" size="100,100">Me
+I turn to see [[Sergeant Callahan]]. The scary one.
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="125" name="Sergeant Callahan" tags="" position="4500,1000" size="100,100">Me
 &quot;Private Donovan, sir.&quot; I stand straight.
 
 Sgt. Callahan
@@ -2511,7 +2540,14 @@ I...
 
 [[am a soldier]]. I follow orders. I take risks.
 
-[[am injured. I can&#39;t be of use]].</tw-passagedata><tw-passagedata pid="126" name="am a soldier" tags="" position="4650,1000" size="100,100">I limp to where all the others are. Sergeant Mason is barking at them. I stand next to Finn, who glares at me.
+[[am injured. I can&#39;t be of use]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="126" name="am a soldier" tags="" position="4650,1000" size="100,100">I limp to where all the others are. Sergeant Mason is barking at them. I stand next to Finn, who glares at me.
 
 Sgt. Mason
 &quot;This is an important task. Do not fu#k up. If you fu#k up, the world fu#ks up. And we will be dragged to camps by facists, your family will be dragged to camps by facists, and your little sister will be brainwashed into a happy little facist. Then, your facist little sister will kill you without batting an eye. So-&quot; He takes a deep breath &quot;Are you gonna fu#k this up?&quot;
@@ -2530,13 +2566,27 @@ Mason makes his way towards me. He stares into my eyes.
 Sgt. Mason
 &quot;Dismissed.&quot;
 
-Everyone leaves, [[except for me, Mason and Finn]].</tw-passagedata><tw-passagedata pid="127" name="am injured. I can&#39;t be of use" tags="" position="4650,1150" size="100,100">Me
+Everyone leaves, [[except for me, Mason and Finn]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="127" name="am injured. I can&#39;t be of use" tags="" position="4650,1150" size="100,100">Me
 &quot;Sir, I am...&quot;
 
 Sgt. Callahan
 &quot;A soldier. Fall in.&quot;
 
-Damn, he&#39;s right. I [[am a soldier]].</tw-passagedata><tw-passagedata pid="128" name="except for me, Mason and Finn" tags="" position="4800,1000" size="100,100">Sgt. Mason
+Damn, he&#39;s right. I [[am a soldier]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="128" name="except for me, Mason and Finn" tags="" position="4800,1000" size="100,100">Sgt. Mason
 &quot;Private A. Donovan.&quot; He says in my face, &quot;I ordered you to haul crates and stir stew.&quot;
 
 Finn, just wandering arou...&quot;
@@ -2547,7 +2597,14 @@ Sgt. Mason
 Me
 &quot;[[Thank you, sir]].&quot;
 
-&quot;[[I wish to fight, sir]].&quot;</tw-passagedata><tw-passagedata pid="129" name="Thank you, sir" tags="" position="4800,1150" size="100,100">Thanks to Mason, I get to stay in camp. I guess I will be missing out on the fun tomorrow.
+&quot;[[I wish to fight, sir]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="129" name="Thank you, sir" tags="" position="4800,1150" size="100,100">Thanks to Mason, I get to stay in camp. I guess I will be missing out on the fun tomorrow.
 
 I finally find Finn.
 
@@ -2570,13 +2627,28 @@ I...
 
 [[Hug him]].
 
-[[Remind him of his duties]].</tw-passagedata><tw-passagedata pid="130" name="I wish to fight, sir" tags="" position="4800,1750" size="100,100">Sgt. Mason
+[[Remind him of his duties]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="130" name="I wish to fight, sir" tags="" position="4800,1750" size="100,100">Sgt. Mason
 Mason stares at me as if I am mad. He squints. &quot;Are you on a death wish?&quot; He looks around &quot;Just haul your crates and cook stew.&quot; After sighing he lowers his voice &quot;This isn&#39;t worth it, Alex.&quot;
 
 Me
 &quot;Understood. [[Thank you, sir]].&quot;
 
-&quot;[[Soldiers fight. It&#39;s what we do]].&quot;</tw-passagedata><tw-passagedata pid="131" name="Hug him" tags="" position="4950,1300" size="100,100">Without a word, I wrap my arms around my friend. He stand stunned, then pats me on the back.
+&quot;[[Soldiers fight. It&#39;s what we do]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="131" name="Hug him" tags="" position="4950,1300" size="100,100">Without a word, I wrap my arms around my friend. He stand stunned, then pats me on the back.
 
 Finn
 &quot;I&#39;ll be fine. Stew cooker.&quot; He chuckles, &quot;When all this is done, I&#39;ll have Tilly bake you a pie.&quot; He shrugs &quot;Hell! I&#39;ll bake you a pie.&quot;
@@ -2585,9 +2657,17 @@ Me
 &quot;I&#39;ll... Let Matilda do it.&quot; I smile.
 
 Finn
-&quot;Thanks, Alex.&quot;
+He smiles &quot;Thanks, Alex.&quot;
 
-I nod. He turns away. And [[the day passes]].</tw-passagedata><tw-passagedata pid="132" name="Remind him of his duties" tags="" position="4950,1150" size="100,100">Me
+I nod. He turns away. And [[the day passes]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="132" name="Remind him of his duties" tags="" position="4950,1150" size="100,100">Me
 &quot;We are soldiers, we fight.&quot; I sigh &quot;Matilda&#39;s back home waiting for you. Make sure the Imps leave our home alone.&quot;
 
 Finn
@@ -2599,7 +2679,15 @@ Me
 Finn
 &quot;Thanks, Alex.&quot;
 
-I nod. He turns away. And [[the day passes]].</tw-passagedata><tw-passagedata pid="133" name="the day passes" tags="" position="5100,1150" size="100,100">Morning comes, I barely slept. No, I didn&#39;t sleep.
+I nod. He turns away. And [[the day passes]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="133" name="the day passes" tags="" position="5100,1150" size="100,100">Morning comes, I barely slept. No, I didn&#39;t sleep.
 
 I couldn&#39;t. Misha, Finn... They are both in danger, yet I am staying behind doing... What? Did I enlist for this?
 
@@ -2622,13 +2710,28 @@ I...
 
 [[Wait]].
 
-[[Haul crates]].</tw-passagedata><tw-passagedata pid="134" name="Wait" tags="" position="5250,1450" size="100,100">I sit on a stool in a tent, I stare at my hands.
+[[Haul crates]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="134" name="Wait" tags="" position="5250,1450" size="100,100">I sit on a stool in a tent, I stare at my hands.
 
 I decide to...
 
 [[Sleep some more]].
 
-[[Read Misha&#39;s latest letter again]].</tw-passagedata><tw-passagedata pid="135" name="Haul crates" tags="" position="5250,1150" size="100,100">I lift crates after crates. I lift and move until my legs wobble. Until my back aches. Until tears well in my eyes.
+[[Read Misha&#39;s latest letter again]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="135" name="Haul crates" tags="" position="5250,1150" size="100,100">I lift crates after crates. I lift and move until my legs wobble. Until my back aches. Until tears well in my eyes.
 
 Why?
 
@@ -2642,7 +2745,14 @@ If Misha is here...
 
 [[She would be ashamed of me]].
 
-[[She would fight, so I may live]].</tw-passagedata><tw-passagedata pid="136" name="Sleep some more" tags="" position="5400,1450" size="100,100">I nod off to sleep. Guilt in my weary heart.
+[[She would fight, so I may live]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="136" name="Sleep some more" tags="" position="5400,1450" size="100,100">I nod off to sleep. Guilt in my weary heart.
 
 Why do I have to befriend Finn? Why do I have to sign up for this B.S. Thing and get to know Misha? Why do I have to inflict pain upon myself?
 
@@ -2654,7 +2764,14 @@ As I drift into a foggy slumber, I see stars... I see...
 
 [[The Eagle]].
 
-[[The Rabbit]].</tw-passagedata><tw-passagedata pid="137" name="Read Misha&#39;s latest letter again" tags="" position="5400,1600" size="100,100">&quot;Dear friend Alex,
+[[The Rabbit]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_closed_eyes.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_closed_eyes.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="137" name="Read Misha&#39;s latest letter again" tags="" position="5400,1600" size="100,100">&quot;Dear friend Alex,
 	Thank you for your words, I appreciate your thought. We live in messed up world. War heroes or not, we just try our best.
     I write to you a bit late because I am scared. Alex, I have been picked to do special mission tomorrow, I cannot turn down. I am good shooter, but this time I have bad feeling. Captain says war is not looking good and is taking far too long. The smart people in Union decided to launch special attack. And I am in special team to do special attack.
     Sounds bullsh*t, I know. But that is what I know.
@@ -2676,7 +2793,14 @@ I peel my eyes from the letter and look up at the starry morning sky. I see...
 
 [[The Eagle]].
 
-[[The Rabbit]].</tw-passagedata><tw-passagedata pid="138" name="She would be ashamed of me" tags="" position="5400,1150" size="100,100">I am nothing but a stupid rabbit. Running from danger. Using my bad leg as an excuse.
+[[The Rabbit]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="138" name="She would be ashamed of me" tags="" position="5400,1150" size="100,100">I am nothing but a stupid rabbit. Running from danger. Using my bad leg as an excuse.
 I lift another crate.
 
 I slip as my leg gives out.
@@ -2687,7 +2811,14 @@ I see...
 
 [[The Eagle]].
 
-[[The Rabbit]].</tw-passagedata><tw-passagedata pid="139" name="She would fight, so I may live" tags="" position="5400,1300" size="100,100">She fight to avenge, she will fight to protect all that she loves as well. And I should&#39;ve done the same. I lift another crate.
+[[The Rabbit]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="139" name="She would fight, so I may live" tags="" position="5400,1300" size="100,100">She fights to avenge, she will fight to protect all that she loves as well. And I should&#39;ve done the same. I lift another crate.
 
 I slip as my leg gives out.
 
@@ -2697,7 +2828,14 @@ I see...
 
 [[The Eagle]].
 
-[[The Rabbit]].</tw-passagedata><tw-passagedata pid="140" name="The Eagle" tags="" position="5550,1150" size="100,100">The bird of prey. Her eyes sharp, her talons sharper. Those who run from her cannot hide. She soars through dangerous winds, she perches on towering heights.
+[[The Rabbit]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="140" name="The Eagle" tags="" position="5550,1150" size="100,100">The bird of prey. Her eyes sharp, her talons sharper. Those who run from her cannot hide. She soars through dangerous winds, she perches on towering heights.
 
 Her eyes pierce through mine. She sees me as who I truly am...
 
@@ -2707,7 +2845,14 @@ Hopeful.
 
 Well, here&#39;s to hoping.
 
-[[I open my eyes groggily]].</tw-passagedata><tw-passagedata pid="141" name="The Rabbit" tags="" position="5550,1300" size="100,100">The nimble wild critter. Those who search for him cannot find him, for he knows they are coming for him. None sound can escape his ears, but he never chooses to face his fears.
+[[I open my eyes groggily]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_closed_eyes.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_closed_eyes.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="141" name="The Rabbit" tags="" position="5550,1300" size="100,100">The nimble wild critter. Those who search for him cannot find him, for he knows they are coming for him. None sound can escape his ears, but he never chooses to face his fears.
 
 Run. Run from the pain. Occupy yourself with mindless duties, so you will never have to face yourself.
 
@@ -2717,7 +2862,14 @@ My heart beating faster when I hold onto Misha&#39;s letter. My laughter when I 
 
 Rabbit, hear my cry. Keep them safe. Lend them your senses and bring them home.
 
-[[I open my eyes groggily]].</tw-passagedata><tw-passagedata pid="142" name="I open my eyes groggily" tags="" position="5700,1150" size="100,100">I wake up on my bunk. Someone must&#39;ve moved me there. My head throbs. I sit up. The sky is still dark...
+[[I open my eyes groggily]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="142" name="I open my eyes groggily" tags="" position="5700,1150" size="100,100">I wake up on my bunk. Someone must&#39;ve moved me there. My head throbs. I sit up. The sky is still dark...
 
 No... It is darker. It is night already. I must&#39;ve slept through the entire day. In the distance I hear chatter. I hear panic. I limp over.
 
@@ -2734,7 +2886,14 @@ Me
 &quot;What&#39;s going on?&quot; I ask.
 
 The man
-&quot;Haven&#39;t you heard? [[We won]]! No go cook!&quot;</tw-passagedata><tw-passagedata pid="143" name="We won" tags="" position="5850,1150" size="100,100">We won?! But so many are hurt. Winning the battle doesn&#39;t mean Finn is alright. I head towards the cooking line. I begin to notice something... Odd.
+&quot;Haven&#39;t you heard? [[We won]]! Now go cook!&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="143" name="We won" tags="" position="5850,1150" size="100,100">We won?! But so many are hurt. Winning the battle doesn&#39;t mean Finn is alright. I head towards the cooking line. I begin to notice something... Odd.
 
 Finn said they were supposed to meet up with some new recruits. But these soldiers, they are different uniforms.
 
@@ -2762,7 +2921,14 @@ Ruth
 &quot;Yeah! The Impies were nothing to them. They-&quot;
 
 Me
-&quot;The [[Red Army]]?&quot;</tw-passagedata><tw-passagedata pid="144" name="Red Army" tags="" position="5850,1300" size="100,100">I look around, and Ruth is right. These new recruits... They aren&#39;t recruits, they are the Red Army. The star shaped badges they have, the hats they wear. These are soldiers of the Eastern Front.
+&quot;The [[Red Army]]?&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="144" name="Red Army" tags="" position="5850,1300" size="100,100">I look around, and Ruth is right. These new recruits... They aren&#39;t recruits, they are the Red Army. The star shaped badges they have, the hats they wear. These are soldiers of the Eastern Front.
 
 I say goodbye to Ruth and hurry to the medical tent. I begin to ask everyone I see where Finn is. It is hectic. Until...
 
@@ -2784,7 +2950,15 @@ Finn
 &quot;Alex... You saved my a#s.&quot;
 
 Me
-&quot;... [[I don&#39;t follow]].&quot;</tw-passagedata><tw-passagedata pid="145" name="I don&#39;t follow" tags="" position="6000,1150" size="100,100">Finn
+&quot;... [[I don&#39;t follow]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="145" name="I don&#39;t follow" tags="" position="6000,1150" size="100,100">Finn
 He clears his throat &quot;So. We were lost in the Impy trench. Right? Me and several other boys...&quot;
 
 Me
@@ -2814,14 +2988,30 @@ Me
 &quot;I am not-&quot;
 
 Finn
-&quot;She told me you should write her again.&quot; He smirks, then sighs, &quot;Why dont you... [[Go write her right now]]?&quot;</tw-passagedata><tw-passagedata pid="146" name="Go write her right now" tags="" position="6000,1300" size="100,100">I give Finn another hug, yes he groans in pain again, before I rush to the pigeon post. I limp and limp, I gasp for air. Eveyone is hustling and bustling, but I know where to go.
+&quot;She told me you should write her again.&quot; He smirks, then sighs, &quot;Why dont you... [[Go write her right now]]?&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="146" name="Go write her right now" tags="" position="6000,1300" size="100,100">I give Finn another hug, yes he groans in pain again, before I rush to the pigeon post. I limp and limp, I gasp for air. Eveyone is hustling and bustling, but I know where to go.
 
 I am out of breath when I finally arrive at the pigeon coop. I fling open the coop door and fetch for Ember. She coos, alarmed.
 
 Me
 &quot;Right! I need to write the letter first. Fu#k, what am I doing.&quot; With my heart pounding I set the pigeon back down. &quot;What to write...&quot;
 
-I need to [[get my pen and some paper]]. Let&#39;s see...</tw-passagedata><tw-passagedata pid="147" name="Hug her" tags="" position="5850,1600" size="100,100">I pull her into an embrace, my tears wetting her should. She hugs me just as tightly.
+I need to [[get my pen and some paper]]. Let&#39;s see...
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/ember.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="147" name="Hug her" tags="" position="5850,1600" size="100,100">I pull her into an embrace, my tears wetting her shoulder. She hugs me just as tightly.
 
 Misha
 &quot;Surprise, Alexi.&quot; She giggles. We pull apart gradually.
@@ -2830,7 +3020,15 @@ Me
 
 &quot;[[Alex. No &quot;i.&quot;]]&quot;
 
-&quot;[[I love you, Misha]].&quot;</tw-passagedata><tw-passagedata pid="148" name="And I am yours" tags="" position="6000,1600" size="100,100">Misha smiles, she gives me a hard nudge. 
+&quot;[[I love you, Misha]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="148" name="And I am yours" tags="" position="6000,1600" size="100,100">Misha smiles, she gives me a hard nudge. 
 
 Misha
 &quot;I look good, yeah? I told you, I am pretty girl.&quot;
@@ -2844,14 +3042,22 @@ Misha
 Me
 &quot;[[Alex. No &quot;i.&quot;]]&quot;
 
-&quot;[[I love you, Misha]].&quot;</tw-passagedata><tw-passagedata pid="149" name="Alex. No &quot;i.&quot;" tags="" position="5850,1750" size="100,100">Misha
+&quot;[[I love you, Misha]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="149" name="Alex. No &quot;i.&quot;" tags="" position="5850,1750" size="100,100">Misha
 She stands there, face crossed. Then after her angry facade crumbles she burst into a laugh so loud it turn heads. But she doesn&#39;t mind the attention. &quot;Alright, sorry. Bad habit.&quot; She looks into my eyes &quot;Well met, Alex.&quot;
 
 Me
 &quot;Likewise, Misha.&quot;
 
 Misha
-&quot;Oooo actually my name is Marína, Alexi. You got it wrong! OOooo, shame on you.&quot; She smirks.
+&quot;Oooo- AcTuALLy my name is Marína, Alexi. You got it wrong! OOooo, shame on you.&quot; She smirks.
 
 Me
 I am trying not to laugh. &quot;Okay, my bad. Nice to meet you.&quot;
@@ -2859,7 +3065,15 @@ I am trying not to laugh. &quot;Okay, my bad. Nice to meet you.&quot;
 Misha
 &quot;Nice to meet you too,&quot; She puts her hands on her hips &quot;&#39;&#39;my Sweetheart&#39;&#39; Alex.&quot;
 
-==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==</tw-passagedata><tw-passagedata pid="150" name="I love you, Misha" tags="" position="6000,1750" size="100,100">Misha
+==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="150" name="I love you, Misha" tags="" position="6000,1750" size="100,100">Misha
 She stands there, frozen. Then she burst into a loud, endearing giggle &quot;Hey- I love you too. I think.&quot;
 
 Me
@@ -2871,7 +3085,15 @@ Misha
 Me
 &quot;Sure thing.&quot; I nod &#39;&#39;&quot;My Sweetheart.&quot;&#39;&#39;
 
-==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==</tw-passagedata><tw-passagedata pid="151" name="get my pen and some paper" tags="" position="6000,1450" size="100,100">I have a pen, but I decide to limp back to my bunk to get some parchment. What should I write? So much happened and I missed it all. Just when I am about to leave the pigeon post...
+==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="151" name="get my pen and some paper" tags="" position="6000,1450" size="100,100">I have a pen, but I decide to limp back to my bunk to get some parchment. What should I write? So much happened and I missed it all. Just when I am about to leave the pigeon post...
 
 A voice
 &quot;Don&#39;t write.&quot; Her voice smooth with a hint of gruffness. &quot;Just tell me.&quot;
@@ -2888,7 +3110,15 @@ I...
 
 [[Hug her]].
 
-&quot;[[And I am yours]].&quot;</tw-passagedata><tw-passagedata pid="152" name="Soldiers fight. It&#39;s what we do" tags="" position="4950,1750" size="100,100">Sgt. Mason
+&quot;[[And I am yours]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="152" name="Soldiers fight. It&#39;s what we do" tags="" position="4950,1750" size="100,100">Sgt. Mason
 He grasps me by the collar, &quot;No! Soldiers follow orders!&quot; I swear I heard his voice tremble &quot;Don&#39;t throw your life away.&quot;
 
 Me
@@ -2898,11 +3128,25 @@ Sgt. Mason
 He lets go, and turns away. &quot;Then I&#39;ll see you out there, private.&quot;
 
 Me
-&quot;[[Sir, yes sir]]!&quot;</tw-passagedata><tw-passagedata pid="153" name="Sir, yes sir" tags="" position="5100,1750" size="100,100">Finn refuses to talk to me after finding out I am coming with. I know where he&#39;s coming from. But I can&#39;t just watch the people I care about put themselves in danger while I do nothing. I disobeyed my parents to be here, there is no turning back.
+&quot;[[Sir, yes sir]]!&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="153" name="Sir, yes sir" tags="" position="5100,1750" size="100,100">Finn refuses to talk to me after finding out I am coming with. I know where he&#39;s coming from. But I can&#39;t just watch the people I care about put themselves in danger while I do nothing. I disobeyed my parents to be here, there is no turning back.
 
 I lie on my bunk as I stare into the dark tent ceiling. What awaits me tomorrow? I do not know. I will just go where I am needed and make my best judgement.
 
-[[I close my eyes]].</tw-passagedata><tw-passagedata pid="154" name="I close my eyes" tags="" position="5250,1750" size="100,100">We barely have enough sleep. Each of us grabbed a piece of bread before they herd us into trucks. I sit next to Finn, rifle in hand.
+[[I close my eyes]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_closed_eyes.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_closed_eyes.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="154" name="I close my eyes" tags="" position="5250,1750" size="100,100">We barely have enough sleep. Each of us grabbed a piece of bread before they herd us into trucks. I sit next to Finn, rifle in hand.
 
 I turn to look at him. I should...
 
@@ -2910,7 +3154,15 @@ I turn to look at him. I should...
 
 [[Tell him about Misha&#39;s letter]].
 
-[[Apologize]].</tw-passagedata><tw-passagedata pid="155" name="Ask him about this special mission" tags="" position="5250,1900" size="100,100">Me
+[[Apologize]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="155" name="Ask him about this special mission" tags="" position="5250,1900" size="100,100">Me
 &quot;So... What makes this time so special? Why all the gloomy faces?&quot;
 
 Finn
@@ -2922,7 +3174,15 @@ Me
 Finn
 He sighs, &quot;Fine.&quot; He rubs his eyes groggily, &quot;We are going to rendezvous with another battalion. Together we are to punch through Imp defenses and break the stalemate. A Hail Mary. Actually, not quite. They say there is a route secured that will allow us to hop into Imp trenches unseen. Guess we will have to find out if the information is genuine.&quot; He flips open his locket and stares at the young woman in the picture. &quot;If it is genuine, and we succeed, this will be a major breakthrough in the Western Front. If we don&#39;t...&quot; He falls silent.
 
-Hours pass, then [[we finally arrive]].</tw-passagedata><tw-passagedata pid="156" name="Tell him about Misha&#39;s letter" tags="" position="5250,2050" size="100,100">Me
+Hours pass, then [[we finally arrive]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="156" name="Tell him about Misha&#39;s letter" tags="" position="5250,2050" size="100,100">Me
 &quot;So Misha wrote back.&quot;
 
 Finn
@@ -2942,7 +3202,15 @@ The people staring at me begin to nod. Someone even patted my back. Finn opens h
 Finn
 &quot;We live, we go home. I like that.&quot;
 
-Hours pass, then [[we finally arrive]].</tw-passagedata><tw-passagedata pid="157" name="Apologize" tags="" position="5250,2200" size="100,100">Me
+Hours pass, then [[we finally arrive]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="157" name="Apologize" tags="" position="5250,2200" size="100,100">Me
 &quot;Look... I&#39;m sorry.&quot; I glance over at Finn.
 
 Finn
@@ -2956,7 +3224,15 @@ The people staring at me begin to nod. Someone even patted my back. Finn opens h
 Finn
 &quot;We live, we go home. I like that.&quot;
 
-Hours pass, then [[we finally arrive]].</tw-passagedata><tw-passagedata pid="158" name="we finally arrive" tags="" position="5400,2050" size="100,100">We were supposed to rendezvous with another battalion, but there are no signs of them. Maybe they proceeded already, maybe they aren&#39;t here yet. We couldn&#39;t establish contact with them. Should&#39;ve brought Ember with me. She would be praised as a heroine.
+Hours pass, then [[we finally arrive]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="158" name="we finally arrive" tags="" position="5400,2050" size="100,100">We were supposed to rendezvous with another battalion, but there are no signs of them. Maybe they proceeded already, maybe they aren&#39;t here yet. We couldn&#39;t establish contact with them. Should&#39;ve brought Ember with me. She would be praised as a heroine.
 
 After waiting for a half an hour, we decided to proceed with the opperation. I am assigned to Mason, along with Finn. We know this already.
 
@@ -2964,7 +3240,14 @@ We march through a village ruin. In the debris I can see people, mostly women an
 
 [[Hope]].
 
-[[Terror]].</tw-passagedata><tw-passagedata pid="159" name="Hope" tags="" position="5550,2050" size="100,100">Hope.
+[[Terror]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="159" name="Hope" tags="" position="5550,2050" size="100,100">Hope.
 
 We are the liberators. We are here to put an end to this reckless violence. I smile and wave to a child. He waves back, before his mother pulls him away.
 
@@ -2980,7 +3263,15 @@ Finn
 Me
 &quot;[[Yeah... This is bad]].&quot;
 
-&quot;[[We will be fine]].&quot;</tw-passagedata><tw-passagedata pid="160" name="Terror" tags="" position="5550,2200" size="100,100">Terror.
+&quot;[[We will be fine]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="160" name="Terror" tags="" position="5550,2200" size="100,100">Terror.
 
 We are the destroyers. This was once a lively town, now reduced to ruin. We did this, we soldiers. We are invaders. I look over at a child, he shakes his head, eyes full of tears. His mother pulls him away.
 
@@ -2998,7 +3289,15 @@ Finn
 Me
 &quot;[[Yeah... This is bad]].&quot;
 
-&quot;[[We will be fine]].&quot;</tw-passagedata><tw-passagedata pid="161" name="Yeah... This is bad" tags="" position="5700,2050" size="100,100">Me
+&quot;[[We will be fine]].&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="161" name="Yeah... This is bad" tags="" position="5700,2050" size="100,100">Me
 &quot;Yeah... This is-&quot;
 
 A crisp &#39;&#39;POP&#39;&#39; rips through the air. Someone in front of me is yanked to aside, his body on the ground, blood pools.
@@ -3010,7 +3309,14 @@ We are scattered, like ants when you lift a rock. My heart pounds as I limp towa
 
 Gunfire continues. I duck back behind the wall.
 
-After the firing stops, I slowly [[look pass the wall again]].</tw-passagedata><tw-passagedata pid="162" name="We will be fine" tags="" position="5700,2200" size="100,100">Me
+After the firing stops, I slowly [[look pass the wall again]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="162" name="We will be fine" tags="" position="5700,2200" size="100,100">Me
 &quot;We&#39;ll be just fi-&quot;
 
 A crisp &#39;&#39;POP&#39;&#39; rips through the air. Someone in front of me is yanked to aside, his body on the ground, blood pools.
@@ -3024,7 +3330,14 @@ I search for Finn.
 
 Gunfire continues. I jerk back behind the wall.
 
-After the firing stops, I slowly [[look pass the wall again]].</tw-passagedata><tw-passagedata pid="163" name="look pass the wall again" tags="" position="5850,2050" size="100,100">There. I see Finn. He is squirming under Sergeant Mason&#39;s body.
+After the firing stops, I slowly [[look pass the wall again]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="163" name="look pass the wall again" tags="" position="5850,2050" size="100,100">There. I see Finn. He is squirming under Sergeant Mason&#39;s body.
 
 Fu#k! Mason&#39;s... He must&#39;ve covered for Finn. Imperium piece of sh#ts!
 
@@ -3034,7 +3347,14 @@ I...
 
 [[Go help him]].
 
-[[Stay put]].</tw-passagedata><tw-passagedata pid="164" name="Go help him" tags="" position="6000,2050" size="100,100">I grip the edge of the of the low brick wall, about the vault over.
+[[Stay put]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="164" name="Go help him" tags="" position="6000,2050" size="100,100">I grip the edge of the of the low brick wall, about the vault over.
 
 Finn
 &quot;ALEX!&quot; Finn stares right into my eyes &quot;DO NOT COME!&quot;
@@ -3053,7 +3373,15 @@ Then I remember... The Eagle and The Rabbit. Two constellations, fate written in
 
 [[Help Finn]]. The Eagle prevails.
 
-[[Stay here]]. The Rabbit survives.</tw-passagedata><tw-passagedata pid="165" name="Stay put" tags="" position="6000,2200" size="100,100">Finn
+[[Stay here]]. The Rabbit survives.
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="165" name="Stay put" tags="" position="6000,2200" size="100,100">Finn
 &quot;ALEX!&quot; Finn stares right into my eyes &quot;DO NOT COME!&quot;
 
 I duck back and stay put.
@@ -3070,7 +3398,15 @@ Then I remember... The Eagle and The Rabbit. Two constellations, fate written in
 
 [[Help Finn]]. The Eagle prevails.
 
-[[Stay here]]. The Rabbit survives.</tw-passagedata><tw-passagedata pid="166" name="Help Finn" tags="" position="6150,2050" size="100,100">Fu#k this.
+[[Stay here]]. The Rabbit survives.
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="166" name="Help Finn" tags="" position="6150,2050" size="100,100">Fu#k this.
 
 I check my ammo. I will probably die here. If I die, I die saving a friend. If I live, these Imperials will be sooooo ashamed of themselves. I am a cook with a bad leg. If I manage to even shoot one of these monsters... Ohhh that&#39;ll be hilarious.
 
@@ -3093,7 +3429,15 @@ I...
 
 [[Line up my sights]].
 
-[[Duck down]].</tw-passagedata><tw-passagedata pid="167" name="Stay here" tags="" position="6150,2200" size="100,100">I grit my teeth as tears streak down my cheeks.
+[[Duck down]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="167" name="Stay here" tags="" position="6150,2200" size="100,100">I grit my teeth as tears streak down my cheeks.
 
 Me
 &quot;Sorry, Finn...&quot;
@@ -3111,7 +3455,15 @@ Imperials.
 
 One of them look directly into my eyes, gun at the ready.
 
-I have to live. I have one choice: [[Duck down]].</tw-passagedata><tw-passagedata pid="168" name="Line up my sights" tags="" position="6300,2050" size="100,100">I pick up my gun and plant my feet against the ground. The Imperials have their rifles pointed at me. I see them clear as day. The sun shines through like a spotlight for the final act of a play. Finn is just a couple meters away.
+I have to live. I have one choice: [[Duck down]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_sad.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_sad.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="168" name="Line up my sights" tags="" position="6300,2050" size="100,100">I pick up my gun and plant my feet against the ground. The Imperials have their rifles pointed at me. I see them clear as day. The sun shines through like a spotlight for the final act of a play. Finn is just a couple meters away.
 
 This moment drags for an eternity. My finger on the trigger, staring into two barrels at once.
 
@@ -3137,7 +3489,15 @@ Finn
 &quot;Yes, but whoever shot them can&#39;t be that far away, right? Another rifle squad should be nearby.&quot; Finn winces in pain &quot;Both of them dropped like flies, a squad must&#39;ve seen them, Imps don&#39;t just die like some miracle.&quot;
 
 Me
-&quot;Yes but...&quot; I [[look around]], &quot;What squad?&quot;</tw-passagedata><tw-passagedata pid="169" name="Duck down" tags="" position="6300,2200" size="100,100">I duck. I hear a loud crack.
+&quot;Yes but...&quot; I [[look around]], &quot;What squad?&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_annoyed.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_annoyed.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="169" name="Duck down" tags="" position="6300,2200" size="100,100">I duck. I hear a loud crack.
 
 Everything fades to black.
 
@@ -3158,7 +3518,15 @@ I hear the flapping of wings, and I see my familiar avian friend. The red pigeon
 Me
 &#39;&#39;&quot;Godspeed... Ember...&quot;&#39;&#39;
 
-==&#39;&#39;THE END&#39;&#39;==</tw-passagedata><tw-passagedata pid="170" name="look around" tags="" position="6450,2050" size="100,100">I scan the area. No one. Only dead or wounded bodies.
+==&#39;&#39;THE END&#39;&#39;==
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_closed_eyes.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_closed_eyes.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/ember.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="170" name="look around" tags="" position="6450,2050" size="100,100">I scan the area. No one. Only dead or wounded bodies.
 
 Voice of a Woman
 &quot;Are you well?&quot;
@@ -3180,7 +3548,17 @@ Finn
 &quot;So the battalion we were supposed to meet is from the Red Army...&quot; Pause, &quot;Wait-&quot;
 
 Me
-&quot;[[How do you know his name]]?&quot;</tw-passagedata><tw-passagedata pid="171" name="How do you know his name" tags="" position="6600,2050" size="100,100">She turns to look at me, a smile on her face. She stands back up as she reach into one of her front pockets. She fetch out a crumbled peice of parchment.
+&quot;[[How do you know his name]]?&quot;
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha_with_hat.PNG&quot;&gt;&lt;/div&gt;
+}
+
+</tw-passagedata><tw-passagedata pid="171" name="How do you know his name" tags="" position="6600,2050" size="100,100">She turns to look at me, a smile on her face. She stands back up as she reach into one of her front pockets. She fetch out a crumbled peice of parchment.
 
 Scarred Girl
 She reads &quot;//&quot;You can sit with my friend, Finn, and I, and we will have bread and cheese.&quot;//&quot; She smirks &quot;I guess this is your friend, Finn. Come on, even soldier girl can be smart, don&#39;t be surprised.&quot;
@@ -3190,7 +3568,15 @@ Me
 
 &quot;[[Who are you]]?&quot;
 
-[[Just hug her]].</tw-passagedata><tw-passagedata pid="172" name="Misha" tags="" position="6750,2050" size="100,100">Me
+[[Just hug her]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha_with_hat.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="172" name="Misha" tags="" position="6750,2050" size="100,100">Me
 &quot;Misha? H-How?&quot;
 
 Misha
@@ -3209,7 +3595,14 @@ Me
 &quot;I&#39;m leaving you out to dry next time.&quot;
 
 [[Misha laughs]].
-</tw-passagedata><tw-passagedata pid="173" name="Who are you" tags="" position="6750,2200" size="100,100">Me
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha_with_hat.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="173" name="Who are you" tags="" position="6750,2200" size="100,100">Me
 &quot;Who- Are you?&quot;
 
 Scarred girl
@@ -3227,7 +3620,15 @@ Finn
 Me
 &quot;I&#39;m leaving you out to dry next time.&quot;
 
-[[Misha laughs]].</tw-passagedata><tw-passagedata pid="174" name="Just hug her" tags="" position="6750,2350" size="100,100">I pull her into a tight embrace. She seems surprised, then she sighs, patting me on the back.
+[[Misha laughs]].
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha_with_hat.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="174" name="Just hug her" tags="" position="6750,2350" size="100,100">I pull her into a tight embrace. She seems surprised, then she sighs, patting me on the back.
 
 Me
 &quot;Misha. Oh my God...&quot;
@@ -3242,7 +3643,15 @@ She&#39;s beautiful. This is a girl worth living for.
 Me
 &quot;Misha, &#39;&#39;&quot;My Sweetheart.&quot;&#39;&#39;&quot;
 
-==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==</tw-passagedata><tw-passagedata pid="175" name="Misha laughs" tags="" position="6900,2050" size="100,100">This is a miracle. Too good to be true, but true nonetheless.
+==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha_with_hat.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="175" name="Misha laughs" tags="" position="6900,2050" size="100,100">This is a miracle. Too good to be true, but true nonetheless.
 
 I look at her as I grin. Her eyes were intense before, but now her gaze is tender. Her hair dances gently in the breeze, like feathers. The scars on her face are thin, like lines of writings we have exchanged. Her lips curving into a subtle, but delightful, smile.
 
@@ -3254,7 +3663,15 @@ Misha
 Me
 &quot;No no. It&#39;s just you&#39;re.. You&#39;re &#39;&#39;&quot;my Sweetheart!&quot;&#39;&#39;&quot;
 
-==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==</tw-passagedata><tw-passagedata pid="176" name="Diego" tags="" position="600,1000" size="100,100">Diego&#39;s pigeon has small tie, it coos like any other pigeon but you can tell she&#39;s tired with the way she seats on my hand. For now I&#39;ll just grab the letter.
+==&#39;&#39;END OF CHAPTER ONE&#39;&#39;==
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+&lt;/div&gt;
+&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/Sweethearts/misha_with_hat.PNG&quot;&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="176" name="Diego" tags="" position="600,1000" size="100,100">Diego&#39;s pigeon has small tie, it coos like any other pigeon but you can tell she&#39;s tired with the way she seats on my hand. For now I&#39;ll just grab the letter.
 
 As I open up the latter I can see the hand writing is messing but also clear to read. 
 
