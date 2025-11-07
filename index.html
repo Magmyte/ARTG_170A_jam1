@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Godspeed, Ember.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Godspeed, Ember" startnode="104" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B05A2F1E-F833-472C-AABF-659BC52D7CF3" options="" tags="" zoom="0.6" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-include[title="Sidebar"] {
+<tw-storydata name="Godspeed, Ember" startnode="104" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="B05A2F1E-F833-472C-AABF-659BC52D7CF3" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">tw-sidebar tw-include[title="Sidebar"] {
 	width: 80%;
   	font-size: .4em;
 	position: fixed;
@@ -219,7 +219,21 @@ tw-passage {
 
 tw-story[tags~="default"] {
  background-image:url("default.jpg");
-}</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="Talk-about-here,-the-war" color="yellow"></tw-tag><tw-tag name="Try-to-sound-smart" color="red"></tw-tag><tw-tag name="Me-before-war" color="blue"></tw-tag><tw-tag name="Alex-Male" color="blue"></tw-tag><tw-tag name="Alex-Female" color="red"></tw-tag><tw-passagedata pid="1" name="Chapter 1: My Sweetheart" tags="" position="300,200" size="100,100">&#39;&#39;Chapter 1: My Sweetheart&#39;&#39;
+}
+
+/**
+ * Harlowe Audio Library (HAL), by Chapel, v2.3.0
+ * for Harlowe 2.1.0 and higher
+ * Released under the Unlicense, and dedicated to the public domain.
+**/
+#audio-overlay{position:fixed;top:0;right:0;left:0;bottom:0;z-index:100000;background:#111}.lds-ring{display:block;position:relative;top:20%;margin:auto;width:20em;height:20em}.lds-ring div{box-sizing:border-box;display:block;position:absolute;width:18em;height:18em;margin:6px;border:6px solid #fff;border-radius:50%;-webkit-animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;animation:lds-ring 1.2s cubic-bezier(.5,0,.5,1) infinite;border-color:#fff transparent transparent transparent}.lds-ring div:nth-child(1){-webkit-animation-delay:-.45s;animation-delay:-.45s}.lds-ring div:nth-child(2){-webkit-animation-delay:-.3s;animation-delay:-.3s}.lds-ring div:nth-child(3){-webkit-animation-delay:-.15s;animation-delay:-.15s}@-webkit-keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes lds-ring{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}input#audio-volume{width:100%;margin:2em 0}span#vol-title{position:relative;bottom:-1em;font-size:1rem;float:left}tw-link#audio-mute{display:inline-block;padding:.3em;width:90%;text-decoration:none;color:#111;background:#eee;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;border:1px solid #000}tw-link#audio-mute:hover{opacity:.8}tw-link#audio-mute:active{opacity:.6}tw-link#audio-mute span{display:inline-block;width:1em;position:relative;height:1em;top:.2em;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAABF0lEQVR4Ae2VJVREYRSEB3ftuFUaLhF6I22iF7TgLr1XvAc849CwiBac9Xtm3e97cefp/Pec7+mdH0mZrGtMoBomyAEHfjGHXKg07gNxeUS3BuMAqGZswE7YcOIYgqgG7BFlSQgTAgKysC2jNjQmghFQCOpMxq+QmQgmFATU4kcq/YlgfKB1lALUqFSukRIbEwpy4BTZPM/Bu9TaQ362KAsl56sAtSR+Sgv6RCFdr/gjBYiuj65c3J0eNEmXz95TgybocvmoJj3avf5l59L1iD/WglZCP7/uh8zgeQ6epdahaZENFIPCCFvEYNPW4JdNazBGzhkj6caCbSc02DRRu0+8RR/+rb7wx6D505HxCVKvG0zpp+yknHe8MBDkT/s8AAAAAElFTkSuQmCC);background-size:contain}tw-link#audio-mute.muted span{right:4px;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAASElEQVR4Ae3WsQ0AMAjAsJ7ez9MTGEmlRGL3BJzPq6prw2DDYMNgw2DDYMOwh1kAMUygQIEC2RejANVxnVE9aDOqJ39GVZWqB5Z3r1ndBX5oAAAAAElFTkSuQmCC)}div#audio-volume{float:left}div#audio-controls{font:100% Georgia,serif;font-size:1.5em;position:fixed;width:8em;height:100%;padding:1em 2em;z-index:10000;top:0;left:0;bottom:0;background:#333;color:#eee;transition:left .3s;text-align:center}div#audio-controls.closed{left:-10.5em}div#audio-controls tw-link#audio-panel-toggle{display:inline-block;width:1.5em;position:absolute;height:1.5em;top:0;right:0;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;text-decoration:none;background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAYklEQVR4Ae3MsQFAMAAEQMDEagCgN4EuVTrbPcACeUBugDNeSdMQomI0PmYdTEYD9DA5jcVoBKuxGY1kNQ6jGRSaGaIj8gw1aI/KYVUSNqsSzMpiVT2zMjlVN0fqVW5o2luMGHqkQmD9cPYAAAAASUVORK5CYII=);background-size:contain}div#audio-controls.closed tw-link#audio-panel-toggle{background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAQAAABLCVATAAAAZElEQVR4Ae3TpwGAMBQAUfrEeHB0cDhcXBSO7ehlgBw9N8BL/YZO95r6uA/UEbOv+ylfHRJ9z1BWLynKJqmWohyS6ijKOygKCpmjZYqXTTA2xUiCsShGAMw8/Q3ArFgFMHek0w3WCaR74eO2YQAAAABJRU5ErkJggg==)}@media screen and (max-width:800px){div#audio-controls.closed{left:-12em}div#audio-controls.closed tw-link#audio-panel-toggle{right:-1.5em}}div#story-menu{margin:1em 0}tw-link.story-menu{width:100%;display:block;font-weight:400;background:#ccc;font-size:.9em;padding:.1em 0;color:#111;border:1px solid #333}tw-link.story-menu.hide{display:none}tw-link.story-menu:hover{opacity:.8}tw-link.story-menu:active{opacity:.6}input[type=range].hal{-webkit-appearance:none;width:100%;margin:2.25px 0}input[type=range].hal:focus{outline:0}input[type=range].hal::-webkit-slider-runnable-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-webkit-slider-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;-webkit-appearance:none;margin-top:-2.25px}input[type=range].hal:focus::-webkit-slider-runnable-track{background:#444}input[type=range].hal::-moz-range-track{width:100%;height:15.5px;cursor:pointer;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d;background:#111;border-radius:0;border:0 solid #010101}input[type=range].hal::-moz-range-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer}input[type=range].hal::-ms-track{width:100%;height:15.5px;cursor:pointer;background:0 0;border-color:transparent;color:transparent}input[type=range].hal::-ms-fill-lower{background:#000;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-fill-upper{background:#111;border:0 solid #010101;border-radius:0;box-shadow:.4px .4px 1px #000,0 0 .4px #0d0d0d}input[type=range].hal::-ms-thumb{box-shadow:0 0 2.2px rgba(17,17,17,.1),0 0 0 rgba(30,30,30,.1);border:0 solid #fff;height:20px;width:11px;border-radius:0;background:rgba(255,255,255,.93);cursor:pointer;height:15.5px}input[type=range].hal:focus::-ms-fill-lower{background:#111}input[type=range].hal:focus::-ms-fill-upper{background:#444}
+/** End of HAL code */</style><script role="script" id="twine-user-script" type="text/twine-javascript">/**
+ * Harlowe Audio Library (HAL), by Chapel, v2.3.0
+ * for Harlowe 2.1.0 and higher
+ * Released under the Unlicense, and dedicated to the public domain.
+**/
+;!function(e){(jQuery.browser=jQuery.browser||{}).mobile=/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(e)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(e.substr(0,4))}(navigator.userAgent||navigator.vendor||window.opera),function(){"use strict";window.Fast={filter:function(e,t){for(var o=e.length,n=[],a=0;a<o;a++)t(e[a],a,e)&&n.push(e[a]);return n},forEach:function(e,t){for(var o=e.length,n=0;n<o;n++)t(e[n],n,e)},map:function(e,t){for(var o=e.length,n=new Array(o),a=0;a<o;a++)n[a]=t(e[a],a,e);return n},find:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return e[n]},findIndex:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return n;return-1},some:function(e,t){for(var o=e.length,n=0;n<o;n++)if(t(e[n],n,e))return!0;return!1}}}(),window.Chapel=window.Chapel||{},window.Chapel.options={preload:!0,loadDelay:0,muteOnBlur:!0,startingVol:.5,persistPrefs:!0,globalA:!0,showControls:!0,sidebarStartClosed:!0,volumeDisplay:!1,trackLoadLimit:500,totalLoadLimit:8e3,debug:!1},window.Chapel.debug=function(){Chapel.options.debug&&console.log.apply(null,arguments)},function(){"use strict";var n=$("tw-storydata"),o=/(.+?):(.+)/,t=/[\r\n]+/,a=/^["']/,r=/["']$/;function e(e){return Fast.map(Fast.filter(e.split(t),function(e){return e&&e.trim()&&e.includes(":")}),function(e){return e.trim()})}function i(e){return e.trim().replace(a,"").replace(r,"").trim()}function s(e){var t=e.match(o);return t instanceof Array?{key:i(t[1]),value:i(t[2])}:e}var u,l,c,p=n.find('tw-passagedata[name="hal.tracks"]'),d=null,p=(p.length&&(p=e(p.text()),u=[],l=[],Fast.forEach(p,function(e){var e=s(e);"string"==typeof e&&l.push(e),u.push([e.key,(e=e.value,Fast.map(e.split(","),i))])}),l.length&&console.error("Some track definitions could not be parsed:\n"+l.join("\n")+"\nPlease check these definitions and try again."),d=new Map(u)),n.find('tw-passagedata[name="hal.config"]')),m=null;function f(e){var t=n.attr("format-version");if(e)return t;var e=t.split("."),t=e[0],o=e[1],e=e[2],t=Number(t),o=Number(o);return[t=(t=Number.isNaN(t)?3:t)<1?3:t,o=Number.isNaN(o)?3:o,e=Number.isNaN(e)?0:e]}function h(){var e=f();return!(3<=e[0]&&3<=e[1])}function g(t){return function(){var e=[].slice.call(arguments).slice(1),e=t.apply(null,e);return"string"==typeof e||"boolean"==typeof e||"number"==typeof e?e:""}}p.length&&(p=e(p.text()),c={},Fast.forEach(Fast.map(p,function(e){return s(e)}),function(e){c[e.key]=e.value}),m=c),m&&Fast.forEach(Object.keys(m),function(e){var t=e,o=c[e],e=typeof Chapel.options[e];"boolean"==e?"true"===o?Chapel.options[t]=!0:"false"===o&&(Chapel.options[t]=!1):"number"==e?(o=Number(o),Number.isNaN(o)||(Chapel.options[t]=o)):"string"==e&&o&&(Chapel.options[t]=o)});var y=require("macros");if(window.Chapel=window.Chapel||{},window.Chapel.Macros={add:function(o){o&&"object"==typeof o&&Fast.forEach(Object.keys(o),function(e){var t;t=o[e=e],h()?y.add(e,g(t),y.TypeSignature.zeroOrMore(y.TypeSignature.Any)):y.add(e,"Any",g(t),y.TypeSignature.zeroOrMore(y.TypeSignature.Any))})}},window.Chapel.Get=Object.freeze({version:f(),isHarlowe3OrLater:3<=f()[0],storyTitle:n.attr("name"),IFID:n.attr("ifid"),useOldMacroAPI:h(),fromPassage:d}),Chapel.debug("Harlowe Version -> ",Chapel.Get.version.join(".")),Chapel.debug("Harlowe Major Version -> ",Chapel.Get.version[0]),Chapel.debug("Story Title -> ",Chapel.Get.storyTitle),Chapel.debug("Story IFID -> ",Chapel.Get.IFID),Chapel.Get.version[0]<2)throw new Error("The Harlowe Audio Library is only designed to work with Harlowe 2 and 3; you appear to be using Harlowe 1 or an otherwise invalid story format.","get.js -> initialization",176);Chapel.options.storagekey="%%hal-"+Chapel.Get.IFID+"-{"+Chapel.Get.storyTitle+"}",Chapel.debug("Storage Key -> ",Chapel.options.storagekey)}(),function(){"use strict";var t=Chapel.options,e=function(e,t){if(window.localStorage)try{e=""+e,"string"!=typeof t&&(t=JSON.stringify(t)),window.localStorage.setItem(e,t)}catch(e){console.error(e)}},o=function(e){if(window.localStorage)try{return e=""+e,window.localStorage.getItem(e)}catch(e){console.error(e)}},n=function(e){if(window.localStorage)try{e=""+e,window.localStorage.removeItem(e)}catch(e){console.error(e)}},a={loaded:[],classes:{},master:{volume:t.startingVol,mute:!1},groups:{playing:[],looping:[],custom:{}},mute:function(e){a.master.mute=!!e,$(document).trigger({type:":master-mute",mute:!!e})},isMuted:function(){return!!a.master.mute},volume:function(e){e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),a.master.volume=e),$(document).trigger({type:":master-volume",volume:e})},getVolume:function(){return a.master.volume},stopAll:function(){a.classes.Track&&Fast.forEach(a.classes.Track.list,function(e){e.stop()})},audioPlaying:function(){return!!a.groups.playing.length},savePrefs:function(){e(t.storagekey,a.master)},loadPrefs:function(){var e=o(t.storagekey);e&&"object"==typeof e&&e.hasOwnProperty("volume")&&"number"==typeof e.volume&&e.hasOwnProperty("mute")&&"boolean"==typeof e.volume&&(delete a.master,a.master=e)},clearPrefs:function(){n(t.storagekey)}},r={track:[":available",":loaded",":play",":stop",":mute",":volume"],master:[":master-mute",":master-volume"]};var i=r.track.concat(r.master);function s(e,t){if(!e||"string"!=typeof e||!e.trim())return null;e=Fast.filter(Fast.map(e.split(" "),function(e){return(e=":"!==(e=e.split(".")[0])[0]?":"+e:e)+".userland"}),function(e){return(t?i:r.track).includes(e)}).join(" ");return e&&e.trim()?e:null}a.data={parseEvent:s,bail:function(e){throw new Error(e,"audio.js -> bail()",140)}},a.on=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).on(e,t):console.error("Chapel.Audio.on() -> invalid callback")},a.one=function(e,t){t&&"function"==typeof t?(e=s(e,!0))&&$(document).one(e,t):console.error("Chapel.Audio.one() -> invalid callback")},a.off=function(e){(e=s(e,!0))&&$(document).off(e)},t.persistPrefs&&($(document).on(":master-mute",a.savePrefs),$(document).on(":master-volume",a.savePrefs)),$(document).on(":play",function(e){e.track.addToGroup("playing")}),$(document).on(":stop",function(e){e.track.removeFromGroup("playing")}),t.muteOnBlur&&$(window).on("blur",function(){a.isMuted()||(a.mute(!0),$(window).one("focus",function(){a.mute(!1)}))}),a.parseEvent=s,window.Chapel=window.Chapel||{},window.Chapel.Audio=a}(),function(){"use strict";var a=Chapel.Audio,o=a.data.pareEvent,r=a.data.bail,i=Chapel.options,t=$(document.createElement("div")).attr("id","audio-container").css("display","none").appendTo(document.body),s={aac:"audio/aac",caf:"audio/x-caf","x-caf":"audio/x-caf",mp3:'audio/mpeg; codecs="mp3"',mpeg:'audio/mpeg; codecs="mp3"',m4a:"audio/mp4",mp4:"audio/mp4","x-m4a":"audio/mp4","x-mp4":"audio/mp4",oga:"audio/ogg",ogg:"audio/ogg",opus:'audio/ogg; codecs="opus"',wav:"audio/wav",wave:"audio/wav",weba:"audio/webm",webm:"audio/webm"};function u(e,t,o){this instanceof u||r("Track: called without `new` operator"),e||r("Track: no id specified"),"string"!=typeof e&&r("Track: track id is not a string"),t&&(!Array.isArray(t)||t.length)||r("Track: no sources specified"),o?t=[].slice.call(arguments).slice(1):"string"==typeof t&&(t=[t]);var n=$(document.createElement("audio"));Fast.forEach(t,function(e){$(document.createElement("source")).attr({src:e,type:(e=(e=(e=(e=(e=e).split("."))[e.length-1]).includes("?")?e.split("?")[0]:e).toLowerCase().trim(),Object.keys(s).includes(e)||r('Track: unsupported file type "'+e+'"'),s[e])}).appendTo(n)}),n.attr({"data-track":"id","data-volume":1,"data-mute":!1}).one("canplaythrough.hal",function(){a.loaded.push(e)}),i.preload&&n.attr("preload","auto"),n[0].volume=+a.master.volume,this.id=e,this.$el=n,this.unwrap=n[0],this.sources=t}Object.assign(u,{list:[],is:function(e){return e instanceof u},has:function(t){return Fast.some(u.list,function(e){return e.id===t})},emit:function(e,t){$(document).trigger({type:e,track:t}),t.emit(e)},add:function(e,t,o){var n=new u(e,t=o?[].slice.call(arguments).slice(1):t);return u.list.push(n),n.$el.on("canplay",function(){u.emit(":available",n)}),n.$el.on("canplaythrough",function(){u.emit(":loaded",n)}),n.attach(),n},renew:function(){Fast.forEach(u.list,function(e){e.mute(e.isMuted()),e.volume(e.getVolume())})},getIdx:function(t){return Fast.findIndex(u.list,function(e){return e.id===t})},get:function(t){var e=Fast.find(u.list,function(e){return e.id===t});if(e)return e;throw new ReferenceError('There is no track with the id "'+t+'". Please check your spelling and capitalization.',"track.js -> Track.get()",155)},removeFromDOM:function(e){(e="string"==typeof e?u.get(e):e)&&u.is(e)?e.unattach():t.remove()},_runOnMultiple:function(e,t,o){e instanceof Array&&u.prototype.hasOwnProperty(t)&&Fast.forEach(e,function(e){(e=u.is(e)?e:u.get(e)||null)&&e[t].apply(e,o&&o instanceof Array?o:[])})}}),Object.assign(u.prototype,{constructor:u,emit:function(e){this.$el.trigger({type:e,track:this})},clone:function(){return new u(this.id,this.sources)},isAttached:function(){return $.contains(t[0],this.unwrap)},attach:function(){return this.isAttached()||this.$el.appendTo(t),this},unattach:function(){return this.isAttached()&&this.$el.remove(),this},isPlaying:function(){return!this.unwrap.paused},play:function(){var e=this;return this.unwrap.play(),u.emit(":play",this),this.$el.on("ended",function(){e.unwrap.loop||(e.unwrap.currentTime=0,u.emit(":stop",e))}),this},playWhenPossible:function(){var t=this;return this.unwrap.play().then(function(){u.emit(":play",t),t.$el.on("ended",function(){t.unwrap.loop||(t.unwrap.currentTime=0,u.emit(":stop",t))})},function(e){$(document).one("click mousedown keydown touchstart",function(){t.play()})}).catch(function(e){console.error(e)}),this},forcePlay:function(){var e=this,t=$(document.createElement("a")).css("display","none").appendTo(document.body).on("click",function(){e.play()});setTimeout(function(){t.trigger("click")},safeAudioStart)},pause:function(){return this.unwrap.pause(),u.emit(":pause",this),this},stop:function(){return this.unwrap.pause(),this.unwrap.currentTime=0,u.emit(":stop",this),this},mute:function(e){return this.$el.attr("data-mute",e=!!e),a.master.mute?this.unwrap.muted=!0:this.unwrap.muted=e,u.emit(":mute",this),this},isMuted:function(){var e=this.$el.attr("data-mute");return"boolean"==typeof e?e:"false"!==e},toggleMute:function(){return this.mute(!this.isMuted()),this},volume:function(e){return e=Number(e),Number.isNaN(e)||(1<e?e=1:e<0&&(e=0),this.$el.attr("data-volume",e),this.unwrap.volume=e*a.master.volume),u.emit(":volume",this),this},getVolume:function(){return Number(this.$el.attr("data-volume"))},addToGroup:function(e,t){var o=this,t=(t?a.groups.custom:a.groups)[e];return Fast.some(t,function(e){return o.id===e.id})||t.push(this),this},removeFromGroup:function(e,t){var o=this,t=(t?a.groups.custom:a.groups)[e],e=Fast.findIndex(t,function(e){return e.id&&e.id===o.id});return t.splice(e,1),this},loop:function(e){return this.unwrap.loop=!!e,this.unwrap.loop?this.addToGroup("looping"):this.removeFromGroup("looping"),this},isLooping:function(){return!!this.unwrap.loop},toggleLoop:function(){return this.loop(!this.isLooping()),this},seek:function(e){return e<0?e=this.unwrap.duration-e:e>this.unwrap.duration&&(e=this.unwrap.duration),this.unwrap.currentTime=e,this},fadeIn:function(e){var t=this,o=(e=e||1,this.getVolume());return this.volume(0),this.play(),this.$el.animate({volume:o*a.master.volume},1e3*e,function(){t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeOut:function(e){e=e||1;var t=this,o=this.getVolume();return this.$el.animate({volume:0},1e3*e,function(){t.stop(),t.volume(o),u.emit(":volume",t),u.emit(":fade",t)}),this},fadeTo:function(e,t){var o=this;if(e=e||1,t=Number(t),!Number.isNaN(t))return 1<t?t=1:t<0&&(t=0),this.$el.animate({volume:t*a.master.volume},1e3*e,function(){o.volume(t),u.emit(":volume",o),u.emit(":fade",o)}),this;alert("ivalid volume level")},delay:function(e,t){var o=this;"function"==typeof t&&(e=Number(e),(Number.isNaN(e)||e<0)&&(e=0),setTimeout(function(){t.call(o,o,e)},e))},on:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.on() -> invalid callback"),this;(e=o(e))&&this.$el.on(e,t)},one:function(e,t){if(!t||"function"!=typeof t)return console.error("<track>.one() -> invalid callback"),this;(e=o(e))&&this.$el.one(e,t)},off:function(e){(e=o(e))&&this.$el.off(e)}}),a.classes.Track=u,a.newTrack=function(){try{return u.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.newTrack() -> see the console for more information.")}},a.track=function(e){try{return u.get(e)}catch(e){console.error(e.message),alert("Error in A.track() -> see the console for more information.")}},$(document).on(":master-mute",u.renew),$(document).on(":master-volume",u.renew)}(),function(){"use strict";var n=Chapel.Audio,a=n.classes.Track,o=(n.data._extend,/(play)?list:(.+)/i);n.createGroup=function(e,t,o){o=o?[].slice.call(arguments).slice(1):t;t=e,(e=o)&&Array.isArray(e)||(e=[]),n.groups.custom[t]=Fast.map(e,function(e){return a.get(e)})},n.group=function(e){if(!(this instanceof n.group))return new n.group(e);if(Object.keys(n.groups.custom).includes(e))this.members=n.groups.custom[e];else{if(!(n.groups[e]&&n.groups[e]instanceof Array))throw new ReferenceError('There is no group with the id "'+id+'". Please check your spelling and capitalization.',"group.js -> A.group()",29);this.members=n.groups[e]}var t;o.test(e)&&(t=e.match(o)[2])&&t.trim()&&(this.members=n.playlist(t).tracks),Array.isArray(this.members)||(this.members=[],console.error('Could not find members for track group "'+e+'"!'))},Object.assign(n.group,{is:function(e){return this instanceof n.group},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);n=[e.members,t,o];a._runOnMultiple.apply(null,n)}}),Object.assign(n.group.prototype,{constructor:n.group,_run:function(){n.group._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},play:function(){return this._run("play"),this},pause:function(){return this._run("pause"),this},stop:function(){return this._run("stop"),this},mute:function(e){return this._run("mute",e),this},volume:function(e){return this._run("volume",e),this},loop:function(e){return this._run("loop",e),this}})}(),function(){"use strict";var e=Chapel.Audio,a=e.classes.Track;e.data._extend;function n(e,t){if(!(this instanceof n))return new n(e,t);this.id=e,this.tracks=t.map(function(e){return a.get(e)}),this.looping=!1,this.current="",this.playing=!1}Object.assign(n,{list:{},is:function(e){return e instanceof n},add:function(e,t,o){return o&&(t=[].slice.call(arguments).slice(1)),n.list[e]=new n(e,t),n.list[e]},_runOnAll:function(e,t,o,n){null!=n?o=[].slice.call(arguments).slice(2):o instanceof Array||(o=[o]);n=[e.tracks,t,o];a._runOnMultiple.apply(null,n)}}),Object.assign(n.prototype,{constructor:n,clone:function(){return new n(this.id,this.tracks.map(function(e){return e.id}))},_run:function(){n._runOnAll.apply(null,[this].concat([].slice.call(arguments)))},volume:function(e){return this._run("volume",e),this},mute:function(e){return this._run("mute",e),this},shuffle:function(){for(var e,t,o=this.tracks,n=o.length-1;0<n;n--)e=Math.floor(Math.random()*(n+1)),t=o[n],o[n]=o[e],o[e]=t;return this.tracks=o,this},random:function(){return this.tracks[Math.floor(Math.random()*this.tracks.length)]},isPlaying:function(){return this.playing},nowPlaying:function(){return a.get(this.current)},play:function(e){var t=this;if((e=e||(t.current?Fast.findIndex(t.tracks,function(e){return e.id===t.current}):0))>=t.tracks.length&&t.looping)e=0;else if(e>=t.tracks.length)return t.current="",void(t.playing=!1);var o=t.tracks[e],n=o.isLooping();return o.loop(!1),o.play(),t.playing=!0,setTimeout(function(){o.isPlaying()||(t.playing=!1)},20),t.current=o.id,o.$el.one("ended.playlist",function(){e++,o.loop(n),t.play(e)}),t},loop:function(e){return this.looping=!!e,this},isLooping:function(){return this.looping},stop:function(){var e;return this.current&&this.isPlaying()?(e=this.nowPlaying())&&(e.stop(),e.$el.off(".playlist")):this._run("stop"),this.current="",this.playing=!1,this},pause:function(){var e;return this.current&&this.isPlaying()&&((e=this.nowPlaying())&&e.pause()),this.playing=!1,this}}),e.classes.Playlist=n,e.createPlaylist=function(){try{n.add.apply(null,arguments)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}},e.playlist=function(e){try{var t=n.list[e]||null;if(t)return t;throw new ReferenceError('There is no playlist with the id "'+e+'". Please check your spelling and capitalization.',"list.js -> A.playlist()",171)}catch(e){console.error(e.message),alert("Error in A.createPlaylist() -> see the console for more information.")}}}(),function(){"use strict";var t=Chapel.Audio,o=t.classes.Track,n=t.classes.Playlist;function a(t,o){if("object"!=typeof o)throw new TypeError("Invalid extension.","extensions.js -> _extend()",8);Fast.forEach(Object.keys(o),function(e){if(void 0!==t[e])throw new Error('Invalid extension: cannot clobber existing property "'+e+'".',"extensions.js -> _extend()",8);t[e]=o[e]})}t.extend=function(e){a(Audio,e)},o.extend=function(e){a(o,e)},o.extendPrototype=function(e){a(o.prototype,e)},t.extendTrack=o.extend,t.extendTrackProto=o.extendPrototype,t.group.extend=function(e){a(t.group,e)},t.group.extendPrototype=function(e){a(t.group.prototype,e)},t.extendGroup=t.group.extend,t.extendGroupProto=t.group.extendPrototype,n.extend=function(e){a(n,e)},n.extendPrototype=function(e){a(n.prototype,e)},t.extendPlaylist=n.extend,t.extendPlaylistProto=n.extendPrototype}(),function(){"use strict";var e,t,o,n,a,r,i,s=Chapel.options;s.showControls&&(e=$(document.createElement("div")).attr("id","story-menu").css("display","none"),t=$(document.createElement("span")).attr("id","vol-title").append("Volume"),s.volumeDisplay||t.css("display","none"),o=$(document.createElement("input")).attr({id:"audio-volume",type:"range",min:1,max:99,step:1,title:"Volume"}).addClass("hal"),(a=Math.trunc(100*window.Chapel.Audio.master.volume))<0?a=0:100<a&&(a=100),o.attr("value",a),n=function(e){void 0===e&&(e=o.val()),t.empty().append("Volume "+e)},o.on("input",function(){window.Chapel.Audio.volume($(this).val()/100),n($(this).val())}),a=$(document.createElement("tw-link")).attr({id:"audio-mute",title:"Mute"}).append("Mute <span></span>").on("click",function(e){e.preventDefault(),$(this).toggleClass("muted"),Chapel.Audio.mute(!Chapel.Audio.isMuted())}),Chapel.Audio.isMuted()&&a.addClass("muted"),r=$(document.createElement("tw-link")).attr("id","audio-panel-toggle").on("click",function(e){e.preventDefault(),i.toggleClass("closed")}),i=$(document.createElement("div")).attr("id","audio-controls").append(e,t,o,a,r).appendTo(document.body),s.sidebarStartClosed&&i.addClass("closed"),window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.controls={$panel:i,$volume:o,$mute:a,$user:e,close:function(){i.addClass("closed")},open:function(){i.removeClass("closed")},toggle:function(){i.toggleClass("closed")},hide:function(){i.css("display","none")},show:function(){i.css("display","block")},updateVolume:n})}(),function(){"use strict";var s=Chapel.options,t=State,e=$(document.createElement("div")).attr("id","audio-overlay").css("display","none").appendTo(document.body);function o(){e.css("display","block").append('<div class="lds-ring"><div></div><div></div><div></div><div></div></div>')}function u(){e.fadeOut(function(){e.empty()})}window.Chapel=window.Chapel||{},window.Chapel.Audio=window.Chapel.Audio||{},window.Chapel.Audio.loadScreen={show:o,dismiss:u,kill:function(){$("#audio-overlay").remove()}},window.Chapel.Audio.$overlay=e,window.Chapel.Audio.preload=function(){var a,e,r,i;Chapel.debug("This is a mobile browser -> ",$.browser.mobile),t.pastLength||t.futureLength||$.browser.mobile||($(document).ready(function(){o()}),a=100+s.loadDelay,e=Chapel.Audio.classes.Track.list,r=Chapel.Audio.loaded,e.length?(i=Fast.map(e,function(e){return e.id}),0<s.totalLoadLimit&&setTimeout(function(){u()},s.totalLoadLimit),function e(){var t,o,n;i.length?(t=i.shift(),r.includes(t)?e():(o=Chapel.Audio.classes.Track.get(t)).unwrap.readyState<2?(n=!1,o.$el.one("canplaythrough.hal",function(){e(),n=!0}),setTimeout(function(){n||(o.$el.off("canplaythrough.hal"),e())},s.trackLoadLimit)):(r.includes(t)||r.push(t),e())):setTimeout(u,a)}()):setTimeout(u,a))}}(),function(){"use strict";var e,t,o=Chapel.options.storagekey+"_hal_restart_",n=(Chapel.debug("HAL Session Key -> ",o),window.sessionStorage?(Chapel.debug("Session Storage Available"),e=function(e,t){window.sessionStorage.setItem(o+e,t)},t=function(e){return window.sessionStorage.getItem(o+e)}):(Chapel.debug("Session Storage Unavailable"),e=function(){},t=function(){},console.warn("Session storage is unavailable...")),{save:e,load:t});window.Chapel.Audio.state={_store:n,saveTracks:function(){var e;try{e=Fast.map(Chapel.Audio.classes.Track.list,function(e){return{id:e.id,sources:e.sources}}),Chapel.debug("Session Saved (Tracks) -> ",e),e=JSON.stringify(e),n.save("tracks",e)}catch(e){console.error(e.message)}},loadTracks:function(){var e;try{e=(e=n.load("tracks"))&&JSON.parse(e),Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Tracks) -> ",e),Fast.forEach(e,function(e){e.id&&e.sources&&!Chapel.Audio.classes.Track.has(e.id)?Chapel.Audio.newTrack.apply(null,[e.id].concat(e.sources)):Chapel.debug("Track reloading skipped.")}))}catch(e){console.error(e.message)}},savePlaylists:function(){try{var o=Chapel.Audio.classes.Playlist.list,e=Fast.map(Object.keys(o),function(e){var t={};return t.tracks=Fast.map(o[e].tracks,function(e){return e.id}),t.id=o[e].id,t});Chapel.debug("Session Saved (Playlists) -> ",e),e=JSON.stringify(e),n.save("playlists",e)}catch(e){console.error(e.message)}},loadPlaylists:function(){var e;try{(e=(e=n.load("playlists"))&&JSON.parse(e))&&Array.isArray(e)&&e.length&&(Chapel.debug("Session Loaded (Playlists) -> ",e),Fast.forEach(e,function(e){e.id&&e.tracks&&Chapel.Audio.createPlaylist(e.id,e.tracks)}))}catch(e){console.error(e.message)}},saveGroups:function(){var t;try{t={},Fast.forEach(Object.keys(Chapel.Audio.groups.custom),function(e){t[e]=Fast.map(Chapel.Audio.groups.custom[e],function(e){return"string"==typeof e?e:e.id})}),Chapel.debug("Session Saved (Groups) -> ",t),t=JSON.stringify(t),n.save("groups",t)}catch(e){console.error(e.message)}},loadGroups:function(){var t;try{(t=(t=n.load("groups"))&&JSON.parse(t))&&"object"==typeof t&&(Chapel.debug("Session Loaded (Groups) -> ",t),Fast.forEach(Object.keys(t),function(e){Fast.map(t[e],function(e){return Chapel.Audio.classes.Track.get(e)})}),Chapel.Audio.groups.custom=t)}catch(e){console.error(e.message)}}}}(),function(){"use strict";var e=Chapel.options;e.globalA&&void 0===window.A&&(Chapel.debug("Created global A interface."),window.A=window.Chapel.Audio),Chapel.Get.fromPassage&&(Chapel.debug("Loading tracks from track def special passage -> ",Chapel.Get.fromPassage),Chapel.Get.fromPassage.forEach(function(e,t){Chapel.Audio.newTrack.apply(null,[t].concat(e))})),$(document).on("unload",function(){Chapel.debug("User Prefs Saved"),window.Chapel.Audio.savePrefs()}),Chapel.Audio.classes.Track.renew(),Chapel.Audio.controls&&Chapel.Audio.controls.updateVolume(),Chapel.Get.isHarlowe3OrLater&&($(window).on("unload",function(){Chapel.debug("HAL State Saved"),Chapel.Audio.state.saveTracks(),Chapel.Audio.state.savePlaylists(),Chapel.Audio.state.saveGroups()}),Chapel.debug("HAL State Loaded"),Chapel.Audio.state.loadTracks(),Chapel.Audio.state.loadPlaylists(),Chapel.Audio.state.loadGroups()),e.persistPrefs&&(Chapel.debug("User Prefs Loaded"),Chapel.Audio.loadPrefs())}(),function(){"use strict";var i,s,e,u,t;Chapel.options.showControls&&(i=Engine,s=Chapel.Audio.controls.$user,e=function(){return"none"!==s.css("display")},u=function(){return e()||s.css("display","block"),s},t=function(){return e()&&s.css("display","none"),s},Chapel.Audio.menu={hide:t,show:u,isShown:e,links:{add:function(e,t,o){var n,a;if(!e||"string"!=typeof e)return r="undefined",alert(r),void console.error(r);o||"function"!=typeof t?(t&&"string"==typeof t&&(n=t),o&&"function"==typeof o&&(a=o)):(a=t,n=null);var r=$(document.createElement("tw-link")).append(e).attr({tabindex:"0",name:e.toLowerCase().trim()}).on("click",function(){n&&i.goToPassage(n),a&&a()}).addClass("story-menu").appendTo(s);return u(),r},clear:function(){return s.empty(),t()},hide:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').addClass("hide")},show:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').removeClass("hide")},toggle:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').toggleClass("hide")},remove:function(e){e=e.toLowerCase().trim(),$('tw-link.story-menu[name="'+e+'"]').remove()}}})}(),function(){"use strict";var n=Chapel.Audio;function o(e){return e&&"function"==typeof e}function a(e,t){if(!e||"string"!=typeof e)return null;switch(e=e.toLowerCase().trim()){case"isplaying":e="isPlaying";break;case"playwhenpossible":e="playWhenPossible";break;case"ismuted":e="isAMuted";break;case"togglemute":e="toggleMute";break;case"getvolume":e="getVolume";break;case"islooping":e="isLooping";break;case"toggleloop":e="toggleLoop";break;case"fadein":e="fadeIn";break;case"fadeout":e="fadeOut";break;case"fadeto":e="fadeTo";break;case"stopall":e="stopAll"}if("isPlaying"===e&&"master"===t&&(e="audioPlaying"),"group"===t){if(o(n.group.prototype[e]))return e}else if("master"===t){if(o(n[e]))return e}else if(o(n.classes[t].prototype[e]))return e;throw new ReferenceError('Cannot run the command: "'+e+'" on the API "'+t+'". The command may be invalid, or this may be a bug in HAL.',"macros.js -> getCommand()",10)}window.Chapel.Macros.add({newtrack:function(){var e=[].slice.call(arguments);try{return n.newTrack.apply(null,e)}catch(e){alert("Error in the (newtrack:) macro: "+e.message)}},newplaylist:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createPlaylist(e,t)}catch(e){alert("Error in the (newplaylist:) macro: "+e.message)}},newgroup:function(e,t){t=[].slice.call(arguments).slice(1);try{return n.createGroup(e,t)}catch(e){alert("Error in the (newgroup:) macro: "+e.message)}},masteraudio:function(e){try{return e=a(e,"master"),n[e].apply(null,[].slice.call(arguments).slice(1))}catch(e){alert("Error in the (masteraudio:) macro: "+e.message)}},track:function(e,t){try{var o=n.track(e);return o[t=a(t,"Track")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (track:) macro: "+e.message)}},playlist:function(e,t){try{var o=n.playlist(e);return o[t=a(t,"Playlist")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (playlist:) macro: "+e.message)}},group:function(e,t){try{var o=n.group(e);return o[t=a(t,"group")].apply(o,[].slice.call(arguments).slice(2))}catch(e){alert("Error in the (group:) macro: "+e.message)}}})}();
+/** End of HAL code */</script><tw-tag name="Talk-about-here,-the-war" color="yellow"></tw-tag><tw-tag name="Try-to-sound-smart" color="red"></tw-tag><tw-tag name="Me-before-war" color="blue"></tw-tag><tw-tag name="Alex-Male" color="blue"></tw-tag><tw-tag name="Alex-Female" color="red"></tw-tag><tw-passagedata pid="1" name="Chapter 1: My Sweetheart" tags="" position="300,200" size="100,100">&#39;&#39;Chapter 1: My Sweetheart&#39;&#39;
 
 Elyria is at war, and we&#39;ve seen nothing like this before. The whole globe turned into a war machine, no one is safe. Years ago we were still playing the blame game.
 
@@ -236,7 +250,7 @@ tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="2" name="Bureau of Sweethearts" tags="" position="300,350" size="100,100">Most of us go-getters all have someone to go home to. A wife, a husband, a lover... A family. Me? I have always been miserable when it comes to getting a date. Don&#39;t get me wrong, I&#39;m a looker. I look real good. It&#39;s just half of the world is blind. I&#39;ve been told by my aunt I have the eyes of the dashing President Moosevelt and the nose of the youthful Princess Isolde von Stahl. Though I vaguely remember what she looks like from the few times I&#39;ve seen her on posters, I believe she must have a beautiful nose.
+}</tw-passagedata><tw-passagedata pid="2" name="Bureau of Sweethearts" tags="" position="300,325" size="100,100">Most of us go-getters all have someone to go home to. A wife, a husband, a lover... A family. Me? I have always been miserable when it comes to getting a date. Don&#39;t get me wrong, I&#39;m a looker. I look real good. It&#39;s just half of the world is blind. I&#39;ve been told by my aunt I have the eyes of the dashing President Moosevelt and the nose of the youthful Princess Isolde von Stahl. Though I vaguely remember what she looks like from the few times I&#39;ve seen her on posters, I believe she must have a beautiful nose.
 
 Well, after I enlisted my family will never talk to me again, that&#39;s for sure. They have yet to respond to any of my letters. Which is why I decided to turn my energy elsewhere with whatever downtime I have in this hellscape.
 
@@ -2823,8 +2837,12 @@ tw-story {
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
-}
 &lt;/style&gt;
+}
+
+{
+(track: &#39;soundtrack&#39;, &#39;loop&#39;, true)
+(track: &#39;soundtrack&#39;, &#39;playwhenpossible&#39;)
 }</tw-passagedata><tw-passagedata pid="105" name="Start" tags="" position="300,50" size="100,100">&#39;&#39;[[Chapter 1: My Sweetheart]]&#39;&#39;
 {
 &lt;style&gt;
@@ -4767,26 +4785,29 @@ tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="176" name="Diego" tags="" position="600,2100" size="100,100">Diego&#39;s pigeon has small tie, it coos like any other pigeon but you can tell she&#39;s tired with the way she seats on my hand. For now I&#39;ll just grab the letter.
+}</tw-passagedata><tw-passagedata pid="176" name="Diego" tags="" position="600,2100" size="100,100">Diego&#39;s pigeon has a small tie; it coos like any other pigeon, but you can tell she&#39;s tired with the way she sits on my hand. For now, I&#39;ll just grab the letter.
 
-As I open up the latter I can see the hand writing is messing but also clear to read. 
+As I open up the letter, I can see that the handwriting is messy but also clear to read. 
 
 &quot;Hello Alex,
-		My name is Deigo, I guess the Bureau decided we should talk. I didnt expect I&#39;ll get a match, so.... thanks for proving me wrong. hahaha
+		My name is Deigo. I guess the Bureau decided we should talk. I didnt expect I&#39;d get a match, so.... thanks for proving me wrong. hahaha
         
-Anyways, a bit about me, I work at a print shop in Veracruz. I usally help make stuff like posters, notices, menus... slamorous stuff like that. i smell like ink more than soap most days, which is fine cause I like what i do.
+Anyway, a bit about me, I work at a print shop in Veracruz. I usually help make stuff like posters, notices, menus... slamorous stuff like that. I smell like ink more than soap most days, which is fine cause I like what I do.
 
-but the reason i joined the Bureau was because my house gets pretty quiet that it just gets lonely most times. I fugured writing to someone might give me something to look forward to. so here I am. or, well, your pigeon is. 
+But the reason I joined the Bureau was that my house gets pretty quiet, so it just gets lonely most of the time. I figured writing to someone might give me something to look forward to. So here I am. Or, well, your pigeon is. 
 
-I dont really know what to say to someone in a war. Feels... Stupid to pretend like I would. Closest think I&#39;ve done is avoild dodge balls as a kid. so I wont pretend to understand what you&#39;re going through. but if you write, I&#39;ll listen. And answer.
+I don&#39;t really know what to say to someone in a war. Feels... Stupid to pretend like I would. The closest thing I&#39;ve done is avoid dodge balls as a kid. So I won&#39;t pretend to understand what you&#39;re going through. But if you write, I&#39;ll listen. And answer.
        
        Sincerely,
        Diego&quot;
 
-I didn&#39;t expect to get a letter so soon. But I&#39;m sure glad its been very hard out here, with the gloomy weather, seeing all these unhappy faces... Just trying to hold on to hope is hard but still I try. I should write back I&#39;m sure he&#39;s also feeling lonely just like me.
+I didn&#39;t expect to get a letter so soon. But I&#39;m sure glad it&#39;s been very hard out here, with the gloomy weather, seeing all these unhappy faces... Just trying to hold on to hope is hard, but still I try. I should write back, I&#39;m sure he&#39;s also feeling lonely just like me.
+
+I send the pigeon away.
 
 Think about how to [[write to Diego]].
 Check out the other [[pigeons]].
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
@@ -4798,13 +4819,13 @@ tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="177" name="write to Diego" tags="" position="750,2100" size="100,100">I fetch a pen and paper and head towards a nearby stool. Time to respond to this Diego the printmaker’s apprentice. 
+}</tw-passagedata><tw-passagedata pid="177" name="write to Diego" tags="" position="750,2100" size="100,100">I fetch a pen and paper and head towards a nearby stool. Time to respond to this, Diego the printmaker’s apprentice. 
 
 I can flip back to see [[Diego]]&#39;s letter.
 
 &quot;Dear Diego...&quot;
 
-What should I write about? He seems very caring and supportive. Should I write about my time at war? Wait, no, that might not be appropiate for a first letter. He wants to know more about me. What can I talk about? Hmm... I should... 
+What should I write about? He seems very caring and supportive. Should I write about my time at war? Wait, no, that might not be appropriate for a first letter. He wants to know more about me. What can I talk about? Hmm... I should... 
 
 [[Talk about how I&#39;ve been doing]]
 
@@ -4821,12 +4842,12 @@ tw-story {
 }
 &lt;/style&gt;
 &lt;!-- &lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD --&gt;
-}</tw-passagedata><tw-passagedata pid="178" name="Talk about how I&#39;ve been doing" tags="" position="900,2100" size="100,100">Hmm... ok, I guess I would talk about myself. That way, he can get to know more about me. Who knows, he could be the one. hahaha just kidding.. unless.
+}</tw-passagedata><tw-passagedata pid="178" name="Talk about how I&#39;ve been doing" tags="" position="900,2100" size="100,100">Hmm... ok, I guess I would talk about myself. That way, he can get to know more about me. Who knows, he could be the one. Hahaha, just kidding.. unless.
 
 &quot;Dear Diego,
 		I just received your letter today. It&#39;s good to hear from someone with normal worries rather than war talk, hahaha. I really enjoyed reading your letter and hearing about your dodgeball exploits. 
         
-But that&#39;s enough of that. To tell you a bit about myself, I&#39;ve always loved to cook, although it&#39;s nothing fancy, but at least I&#39;m still cooking to this day. I&#39;ve been assigned to work in the kitchen after my leg injury. cooking, cleaning, and lifting supply crates really takes it out of you. So I do envy you a bit, Diego. I miss going to the movies and watching the classics like The Gold Rush or The Thief Bagdad. Those movies always helped me out whenever I was down.
+But that&#39;s enough of that. To tell you a bit about myself, I&#39;ve always loved to cook, although it&#39;s nothing fancy, but at least I&#39;m still cooking to this day. I&#39;ve been assigned to work in the kitchen after my leg injury. Cooking, cleaning, and lifting supply crates really takes it out of you. So I do envy you a bit, Diego. I miss going to the movies and watching the classics like The Gold Rush or The Thief Bagdad. Those movies always helped me out whenever I was down.
 
 But how about you? What types of movies do you find the most comfortable while watching? I really hope to hear from you again. Your letter really brought me a small taste of home. 
 
@@ -4835,7 +4856,8 @@ But how about you? What types of movies do you find the most comfortable while w
         
 [[send letter]]
 
-Maybe think some more about what to [[write to Diego]]..
+Maybe think some more about what to [[write to Diego]]
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
@@ -4847,15 +4869,43 @@ tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="179" name="Talk about how its like working in the kitchen" tags="" position="900,2250" size="100,100"></tw-passagedata><tw-passagedata pid="180" name="send letter" tags="" position="1050,2100" size="100,100">I roll up the letter as carefully as I can and slide it into a small tube. I reach for my trusty bird friend: Spot.
+}</tw-passagedata><tw-passagedata pid="179" name="Talk about how its like working in the kitchen" tags="" position="900,2250" size="100,100">&quot;Dear Diego,
+		I just got your letter today. It&#39;s really nice to meet you. It&#39;s honestly nice to hear from someone who isn&#39;t at war. It makes me feel like I&#39;m back home and all I have to worry about is work and what to eat for breakfast, haha. Besides that, I really enjoyed reading your letter and hearing about your experiences.
 
-Spot&#39;s a sweet pigen, his interesting color spots earned him that name. There were times I would just hold him and feel his warmth during these cold nights, as he coo gently. It is like having a dog as a best friend, but in this case, a bird. 
+But to give you an idea about me, I work in the kitchen at the army; they usually just have me make the food and carry crates around to get the ingredients to cook. So that&#39;s pretty much it, and the basic stuff you would expect, like cleaning the kitchen and dishes. It didnt always work in the kitchen, though at first I was on the front lines, but I got injured and now I&#39;m here, haha.
 
-I strap the letter tube to his back and pat his head as I get ready to send him on his way.
+Random question, what do you usually like to do for fun? Are you an art person or more of a sports person? I hope to hear from you soon.
+        
+	Best wishes, 
+    	Alex D.&quot;
 
-&quot;[[goodbye little fella]]&#39;
 
-And off he goes, as I see him flapping his wings through the air, soaring through the sky.
+[[send letter]]
+
+Maybe think some more about what to [[write to Diego]]
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_thinking.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_thinking.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="180" name="send letter" tags="" position="1050,2100" size="100,100">I roll up the letter as carefully as I can and slide it into a small tube. I reach for my trusty bird friend: Ember.
+
+Ember&#39;s a real sweetheart, her reddish feather is warm and comforting to look at. Like a hearth. She&#39;s a gentle soul. It is like having a dog as a best friend, but in this case, a bird. 
+
+I strap the letter tube to her back and pat her head as I get ready to send her on her way.
+
+[[&quot;Godspeed, Ember&quot;]]
+
+And off she goes, as I see her flapping her wings through the air, soaring through the sky.
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
@@ -4869,20 +4919,21 @@ tw-story {
 }
 &lt;/style&gt;
 }
-</tw-passagedata><tw-passagedata pid="181" name="goodbye little fella" tags="" position="1200,2100" size="100,100">Now that it&#39;s done, I should start prepping for dinner...
+</tw-passagedata><tw-passagedata pid="181" name="&quot;Godspeed, Ember&quot;" tags="" position="1200,2100" size="100,100">Now that it&#39;s done, I should start prepping for dinner...
 
 		~3 hours later~
 
-As the sun begins to set, I can start to see every soldier making their way towards the serving line. Judging by their looks, they look hungry. Besides that, there doesn&#39;t seem to be anyone missing, so it looks like we haven&#39;t lost anyone today, which I&#39;m glad for. can&#39;t really say more about it cause I&#39;m not trying to jinx us. 
+As the sun begins to set, I can start to see every soldier making their way towards the serving line. Judging by their looks, they look hungry. Besides that, there doesn&#39;t seem to be anyone missing, so it looks like we haven&#39;t lost anyone today, which I&#39;m glad for. Can&#39;t really say more about it cause I&#39;m not trying to jinx us. 
 
-They line up, with their shoulders slouching, eyes jaded. i just stare into the pot I cooked, just stirring it.
+They line up, with their shoulders slouching, eyes jaded. I just stare into the pot I cooked, just stirring it.
 
-tin meat, shriveled potatoes, packet herbs... ah... I bet they are going to love this. I begin to scoop delightful stew into their bowls, and I grab a slice of stale bread from another cook serving after finishing up my duties. I start to head towards Finn.
+Tin meat, shriveled potatoes, packet herbs... ah... I bet they are going to love this. I begin to scoop delightful stew into their bowls, and I grab a slice of stale bread from another cook serving after finishing up my duties. I start to head towards Finn.
 
 Finn
-&quot;Alex! he waves, his voice weary but still holding on while also showing enthusiasm which is rare around here.
+&quot;Alex! he waves, his voice weary but still holding on while also showing enthusiasm, which is rare around here.
 
 [[&#39;I begin to sit next to Finn]]
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
@@ -4900,19 +4951,19 @@ tw-story {
 &quot;How was the trenches?&quot;
 
 Finn
-&quot;Was sh#t!&quot; he cheers as he begin to eat my delicious stew &quot;Exactly like this, sh#t!&quot;
+&quot;Was sh#t!&quot; he cheers as he begins to eat my delicious stew. &quot;Exactly like this, sh#t!&quot;
 
 Me
 &quot;You&#39;re welcome.&quot; I chuckle, &quot;I&#39;ll see if I can get them to change things up tomorrow.&quot;
 
 Finn
-&quot;When we get home, do not even consider being a chef.&quot; Finn warns as he wags a finger.
+&quot;When we get home, do not even consider being a chef,&quot; Finn warns as he wags a finger.
 
 Me
-&quot;I will serve you breakfast while you&#39;re in bed,&quot; I shrug &quot;or rather, I will deliver the breakfast to Matilda, and have her serve it to you.&quot;
+&quot;I will serve you breakfast while you&#39;re in bed,&quot; I shrug, &quot;or rather, I will deliver the breakfast to Matilda, and have her serve it to you.&quot;
 
 Finn
-He grins into his bowl, then picks up his gaze to look at me &quot;We will have breakfast together. I will marry her, and you can come over anytime.&quot;
+He grins into his bowl, then picks up his gaze to look at me. &quot;We will have breakfast together. I will marry her, and you can come over anytime.&quot;
 
 Me
 &quot;I&#39;ll hold you to that.&quot; I smile.
@@ -4920,6 +4971,7 @@ Me
 We finish dinner.
 
 There was nothing much more to do, let&#39;s [[hit the hay]].
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
@@ -4946,7 +4998,8 @@ Breakfast is usually quick; we just make eggs and toast and call it a day. Besid
 
 But I don&#39;t go. I have to stay.
 
-guess its time [[to do some work]]
+guess its time to go to [[the next day]].
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
@@ -4960,185 +5013,488 @@ tw-story {
 }
 &lt;/style&gt;
 } 
-</tw-passagedata><tw-passagedata pid="184" name="to do some work" tags="" position="1650,2100" size="100,100">	~2 weeks pass~
-    
-Diego:
-It&#39;s been 4 weeks since I sent that letter. I know it takes a while to get a reply, but I&#39;m worried I might not get a reply. I&#39;m worried Alex might think I&#39;m weird or dislike me. So I have to keep telling myself I&#39;m just overthinking, which I tend to do, hahaha. 
+</tw-passagedata><tw-passagedata pid="184" name="the next day" tags="" position="1650,2100" size="100,100">Alex:
+Just like any other day, here I am working in the kitchen. Today I was in charge of making potato soup with stale bread, not my most interesting meal, but it&#39;s all we have. 
 
-Anyway, I&#39;m almost done with work, so I can start heading home, although I don&#39;t really want to, but the idea that Alex&#39;s letter can come any day now has me going home early. 
+As I finish cooking, many soldiers start filling the tent, as they line up. I even spot my best friend Finn&#39;s line. One by one, they all get their bowls filled with my potato soup. 
 
-~ Diego heads home~
+Finn: 
+&quot;Alex!!! How&#39;s it going?&quot;
 
-As I reach my house, I see a pigeon. A Spotted pigeon with a tube on its back. It looks so tiring. I go inside and grab a small mug filled with water, and place it on my window. The spotted pigeon starts to drink the moment I place it. As I wonder if that&#39;s Alex&#39;s letter, I start to take the tube off his back. 
+Alex:
+&quot;It&#39;s fine, just the same old&quot;
 
-While I take the letter out, I can see it from Alex. My heart stops for a moment from the excitement and joy I feel knowing I got a reply. 
+Finn: 
+Damn Alex, I&#39;m honestly so jealous of you, I just got back from training and it was the worst they had us crawling on mud while the admirals watched us in their chaises. After that, they had us do basic physical training and shooting, which, honestly, was the easiest part of my day so far. haha 
+
+Alex: 
+Haha... I guess I do have it easy... but I should be out in the front lines with y&#39;all. 
+
+Finn: It&#39;s fine, man, what matters is that we live through this.
+
+Random Soldier:
+Hurry the fuck up so that some of us are hungry!!!
+
+Finn: 
+Ok, Alex, I&#39;ll catch you later.
+
+[[finish work]]
 
 
-(hide if player choice letter A) [[read letter]]
-
-(hide if player choice letter B) [[read letter ]]
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}
-</tw-passagedata><tw-passagedata pid="185" name="read letter" tags="" position="1800,2250" size="100,100">
+}</tw-passagedata><tw-passagedata pid="185" name="finish work" tags="" position="1800,2100" size="100,100">As I&#39;m cleaning up the kitchen, I can hear someone&#39;s steps as they enter the tent. I begin to tell them, &quot;Hey, the kitchen is closed, come back later!&quot; while I&#39;m doing the dishes. As the step gets close, I&#39;m about to repeat myself as I begin to turn towards the person. But little did I expect to see Sergeant Callahan. I&#39;ve heard rumors about her; she&#39;s supposedly a very Strict and tense person who is also very mysterious. They call her the &quot;sergeant of many secrets&quot;. 
+
+Sergeant Callahan:
+&quot;Is that how you address your sergeant, Private?&quot;
+
+Alex:
+&quot;ahhh... I&#39;m sorry I didnt realize you were here, Sergeant.&quot;
+
+Sergeant Callahan:
+&quot;When speaking to me, it&#39;s Ma’am.&quot;
+
+Alex: 
+&quot;Ma’am, yes Ma’am!!!&quot;
+
+Sergeant Callahan:
+&quot;Good, now I came here cause I have some business with you, so follow me.&quot;
+
+Alex:
+&quot;Yes, Ma’am!!!&quot;
+
+Sergeant Callahan:
+As you know, the war has been going on for a long time now, and we have lost a lot of brave men and women, God rest their souls.
+
+But the reason I&#39;m here to talk to you is that I want you back on the front line. I know your leg got injured, but we are low on men, and we need anyone willing to fight for the cause. So soldier, what do you say, will you join the front line with all the other brave men and women, or will you cower in the kitchen for the rest of your life?
+
+
+Alex:
+
+[[yes Ma&#39;am i would be honored to join]]
 
 
 
-[[reply to letter]]
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}
-</tw-passagedata><tw-passagedata pid="186" name="read letter " tags="" position="1800,2100" size="100,100">&quot;Dear Diego,
-		I just received your letter today. It&#39;s good to hear from someone with normal worries rather than war talk, hahaha. I really enjoyed reading your letter and hearing about your dodgeball exploits. 
-        
-But that&#39;s enough of that. To tell you a bit about myself, I&#39;ve always loved to cook, although it&#39;s nothing fancy, but at least I&#39;m still cooking to this day. I&#39;ve been assigned to work in the kitchen after my leg injury. cooking, cleaning, and lifting supply crates really takes it out of you. So I do envy you a bit, Diego. I miss going to the movies and watching the classics like The Gold Rush or The Thief Bagdad. Those movies always helped me out whenever I was down.
+}</tw-passagedata><tw-passagedata pid="186" name="yes Ma&#39;am i would be honored to join" tags="" position="1950,2025" size="100,100">Alex:
+Yes, Ma&#39;am, I would be honored to join!
 
-But how about you? What types of movies do you find the most comfortable while watching? I really hope to hear from you again. Your letter really brought me a small taste of home. 
+Sergeant Callahan:
+Good, I&#39;ll see you at 0500 hours, soldier. Also, as of now, you&#39;re off kitchen duties, so finish up and take it easy.
 
-	Best wishes, 
-    	Alex D.&quot;
+Alex:
+Yes, Ma&#39;am, will do!!!
 
-[[reply to letter]]
+She leaves
+
+I [[go find Finn after finishing my duties]]
+
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}
-</tw-passagedata><tw-passagedata pid="187" name="reply to letter" tags="" position="1950,2100" size="100,100">after reading the letter i cant help but feel like i found my soul mate. as i look around for a pin and paper around my house i end up hitting my toe against the door as im heading back to the kichen with the pen and paper on each hand. 
+}</tw-passagedata><tw-passagedata pid="187" name="can i have some time to think it over" tags="" position="1950,2175" size="100,100">
 
-so what should i say... hmmm... ok maybe i should say... nah thats not interseting enogh.
 
-[[write about your favorate movie]]
 
-[[ignore what he asked and change the topic]]
+
+
+
+
+
+
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="188" name="write about your favorate movie" tags="" position="2100,2100" size="100,100">&quot;Dear Alex,
+}</tw-passagedata><tw-passagedata pid="188" name="go find Finn after finishing my duties" tags="" position="2100,2025" size="100,100">As I look around for Finn, I can&#39;t help but wonder how excited he&#39;s going to be that we will get to work together again on the front lines.  I wander around and ask soldiers if they&#39;ve seen him, but many of them don&#39;t know him or don&#39;t know where he is. As I&#39;m about to give up, I see Finn walking out of Sergeant Callahan&#39;s tent looking pissed off. I begin to head to him, and as our eyes meet, his face begins to soften up, but you can still see he&#39;s angry. 
+
+Alex:
+Hey Finn, what&#39;s with the pissed face? Did Sergeant Callahan scold you or something?
+
+Finn: 
+No, we just had a meeting about an upcoming meeting. But what the fuck are you thinking? Why did you apply to join the front lines again with your fucked up foot!?
+
+Alex: 
+Hold on, what the fucks your problem, and secondly, I don&#39;t need to explain myself to you!
+
+Finn:
+Alex, listen to me, you don&#39;t wanna do this, it&#39;s gonna be very dangerous, and I won&#39;t be able to protect you.
+
+Alex:
+Who said I need protecting! Finn, I&#39;m not a little kid; I can make my own decisions, and I thought you would be thrilled just like old times. But I guess I was wrong. 
+
+Finn:
+Listen, Alex, I&#39;m saying this for your own good; you&#39;re only gonna slow us down with your injured foot, and it will get you killed. 
+
+Alex:
+Fuck you, man! I&#39;m not gonna slow anyone down, and I&#39;m definitely not gonna die, just you watch. 
+
+~Alex walks away angry ~
+
+[[the Next day-&gt;&#39;&#39;Assigned mission&#39;&#39;]]
+
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="189" name="&#39;&#39;Assigned mission&#39;&#39;" tags="" position="2250,2025" size="100,100">It&#39;s already the next day, and I couldn&#39;t sleep. I didn&#39;t expect my best friend to say something like that. What&#39;s worth is, Finn&#39;s not wrong, but I&#39;m just tired of hiding behind others while they fight my battles.  All I can do now is prove Finn wrong. 
+
+
+~ it&#39;s 0500 hours~
+
+On my way to the strategy base, I can see the team we will be in to discuss our upcoming mission. As I look around, there are about 10 people coming in, which includes me. Inside the tent, I can see tons of maps, books, and letters, which I imagine contain lots of important information. But enough of that, Sergeant Callahan is about to start the meeting. 
+
+Sergeant Callahan:
+Alright, soldiers, I&#39;ve gathered you here today because you all will be going on a top-secret mission to gather some top-secret information that could change the course of this war. Thanks to the work of our decoders, we were able to find out that the enemy will be transporting some important information to their allies, Germany, about their resource locations and cordons. If we are able to gather this information, we can win soldiers, but I won&#39;t lie to you, most of you might not make it back, but you will be bringing a whole lot of pride and honor surviving your country, and I would be honored to call you all my men. 
+
+Everyone:
+Yes ma&#39;am!!! We would be honored.
+
+Sergeant Callahan:
+Good, now go train. Y&#39;all have 4 weeks to get ready for this mission. Now go get some rest and start training. I&#39;ll see you all at the shooting range at 0800 hours.
+
+
+We all solved and started heading back to our quarters, but now, hearing how important this mission is, I have to train so I won&#39;t slow anyone down. I would rather die a man than a coward.
+
+
+[[2 weeks pass]].
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="190" name="2 weeks pass" tags="" position="2400,2025" size="100,100">It&#39;s been about 2 weeks since we were told about the mission, and I&#39;ve just been training. Most of what I&#39;ve been doing is physical strength training and practicing my aim at the shooting range. I&#39;ve been really pushing myself lately. As for Finn, we haven&#39;t spoken much since our last argument. I feel that I should talk to him, but I don&#39;t know what to say to him.
+
+
+Random soldier:
+Hey Alex, you got a letter from a carrier pigeon. Go get your letter before we close up.
+
+Alex:
+Ohh, ok yeah thanks for letting me know.
+
+[[head to pigeon post]]
+
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="191" name="head to pigeon post" tags="" position="2550,2025" size="100,100">As I make my way to the Pigeon post, I see Finn there too. My stomach starts to hurt and my throat starts to feel dry, as if my body was telling me to run away, but deep down I know things shouldn&#39;t end like this. 
+
+[[Ignore Finn and just get the letter]]
+
+[[Talk to FInn and make up with him]]
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="192" name="Ignore Finn and just get the letter" tags="" position="2700,1950" size="100,100">As I pass Finn without saying, I can&#39;t even turn my head as he calls out to me. I feel bad ignoring him, but I&#39;m still mad that he thinks I need his protection and that I can&#39;t do things on my own. As i enter the Pigoen post i look around a find spot just napping in his cage. as i take him out i can see in his eyes how tired he is from his long journey and i cant help but relate, we are both stuck on a endless journy spot flying to his destinations not getting a break and me stuck at war trying to fight for my country so that they wont suffer like we are. 
+
+As I start heading out, Spot jumps on my shoulder and we continue to my quarters. As I get to my quarter, I grab a bench and sit down. Meanwhile, spot chills on a crate.
+
+[[Open Letter]] 
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="193" name="Talk to FInn and make up with him" tags="" position="2700,2100" size="100,100">As I take a deep breath, I start to walk to Finn.
+
+Alex:
+Hey Finn, how are you doing, man?
+
+Finn:
+Hey Alex, I&#39;m fine, just sending a letter to my girl. 
+
+Alex:
+I see that&#39;s nice. How has she been? 
+
+Finn:
+She&#39;s been good, just telling me about how she&#39;s been and family problems, you know, same old.
+
+Alex:
+I see, yeah, it&#39;s like that. Anyway, listen, Finn, I wanna apologize about what happened last time we talked, but I want you to know I&#39;m still gonna do this mission. You&#39;re my best friend, and I&#39;m gonna leave in 2 weeks, so I want us to make up before I set off. 
+
+Finn:
+Yeah, man, I appreciate that you being a bigger man than me, but you must understand you&#39;re my best friend, and if u die, that&#39;s it, you&#39;re not coming back. And I just can&#39;t lose any more friends, but I won&#39;t stop you. I can see you have already made up your mind. Just be safe out there, ok man. 
+
+Alex:
+I promise, I&#39;ll do whatever it takes to get back in one piece.
+
+Finn:
+Anyway, why are you here?
+
+Alex:
+I&#39;m here for a letter I got. I&#39;ve been writing letters to someone I met through the Bureau of Sweethearts. 
+
+Fin:
+Ok man, I see you, already got someone you&#39;re talking. Alright, I&#39;ll leave you to it then, I got shit to do anyway, man. 
+
+
+[[Head inside the Pigeon post]].
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="194" name="Head inside the Pigeon post" tags="" position="2850,2100" size="100,100">As I enter the Pigeon post, the smell of bird poop enters my nose, but to be honest, it&#39;s not that bad because most of us soldiers don&#39;t really get to shower cause we have to stay cautious of any attacks, and we don&#39;t really have the resources to set up a shower. So most soldiers smell like shit, too. 
+
+But as I look around, I spot, spot with his unique spots on his body and his little tie chilling in a cage. I release him and take him back to my quarters. 
+
+[[Go to quarters]].
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="195" name="Go to quarters" tags="" position="3000,2100" size="100,100">As I arrive back at my quarters, I get a bench and start reading the letter Diego sent.
+
+[[Open Letter]].
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="196" name="Open Letter" tags="" position="3075,1950" size="100,100">&quot;Dear Alex,
 
 	You like films? I love the movies too! My favorite movie is “Death Takes a Holiday”. I didn&#39;t know what I was getting into when I first saw it, but it was so good. Who knew Death was capable of falling in love? He was so deeply in love with Grazia, but he sacrificed his happiness in exchange for keeping her alive. To be honest with you, Alex, I would have joined Death. I mean, I know I would have died, but if I were with my true and my real love, would that not be all I need? I mean, it’s all I want, well, I don’t know, but I do really like romantic films. Do you guys get any type of entertainment over there? The way you’re describing it, it feels like there are no movies or music, so you’re relying on your mind replaying memories as movies. Do you guys juggle and host talent shows? I’m intrigued,
 
 Hope to hear from you soon,
 	Diego&quot;
-
-
-[[send letter-&gt;Letter A]]
-
-[[rewrite letter-&gt;reply to letter]]
-{
-&lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
-&lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
-
-&lt;style&gt;
-tw-story {
-	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
-}
-&lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="189" name="ignore what he asked and change the topic" tags="" position="2100,2250" size="100,100">hmmm, you know what, i dont really like movies that much. lets see what he thinks about about our lord and savior jesus crise. 
-
-&quot;Dear alex,
-	I just receaved your letter today and you dont know how good it is to hear from you. but to be honest with you im not much of a movie person. im always working so i never really have time for them and when i do i tend to just fall asleep lol. 
     
-    but enogh of that, you wont belieave what happened to me today i went to work and made a lot of pamphlets fro the church here. I ended up made a mistake and got yelled at by my boss and he reducted the meterial from my pay. it so annoying becuase i also have to work more hours tomorrow without pay to make up for the work. but yeah thats how ive been. 
+           
+[[Write a letter back]]
+
+
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="197" name="Write a letter back" tags="" position="3150,2100" size="100,100">After reading Diego&#39;s letter i couldnt help but feel a bit of pain in my heart knowing that theirs a chance i might not come back from this upcoming mission. But I also cant help but feeling warm like a little part of me is back home hearing about little things thats happening back home. These couple of weeks have been so hectic that it&#39;s nice just being able to listen to someone, even if it&#39;s just through a letter. Alright, I should reply to deigo ok what should I say to him?
+
+
+[[write about you mission and how you feel about him]]
+
+
+{
+&lt;div id=&quot;portraitL&quot;&gt;
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
+&lt;/div&gt;
+
+&lt;style&gt;
+tw-story {
+	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
+}
+&lt;/style&gt;
+}</tw-passagedata><tw-passagedata pid="198" name="write about you mission and how you feel about him" tags="" position="3300,2025" size="100,100">&quot;Dear Diego,
+
+It&#39;s good to hear from you again. I didnt expect that you would be so into a romance movie, you do have some good taste. &quot;Death Takes a Holiday&quot; is a really good movie, but I loved hearing your thoughts about the movie. But Diego, I have something I need to tell you. 
+
+I recently got chosen to go on a dangerous mission, and after sending this letter, I&#39;ll be leaving in 2 weeks. So before I went, I wanted to let you know, but also when I make it back, I would love to meet you one day. The times we&#39;ve been sending letters to each other have been some very special moments in these cold times, so for that, thank you. 
+
+I can&#39;t tell you much about my mission, but if all goes well, I will be able to see you soon. 
+
+Hope to hear from you soon,
+	Alex&quot;
     
-    also im sorry about your foot.
-    
-	Best wishes, 
-    	Diego.&quot;
+[[send Letter-&gt;Good Letter]]
+
+[[rewrite letter-&gt;Write a letter back]]
 
 
-[[send letterr-&gt;Letter B]]
-
-[[rewrite letter-&gt;reply to letter]]
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="190" name="Letter A" tags="" position="2250,2100" size="100,100">As i finish writing the letter, I roll it up and put it in the small tube. i then head out side and start looking for the pigen. after 5 minates of searching I found Spot napping in the shade on a tree next to my house. 
+}</tw-passagedata><tw-passagedata pid="199" name="hal.tracks" tags="" position="150,325" size="100,100">soundtrack:  https://meltyn.github.io/audiojam/audio/soundtrack2.mp3</tw-passagedata><tw-passagedata pid="200" name="Good Letter" tags="" position="3450,2025" size="100,100">I finished the letter and placed it inside the small tube, and on Spot’s back. As I watched Spot fly away, I started to wonder if this would be the last letter I get from Diego. Am I being selfish for promising him I will come back? I don&#39;t know, but I certainly don&#39;t plan on dying any time soon. 
 
-as i see spot napping i decided to give him some time to rest before i send him to alex. 
+But ok, time to start training again.
 
-[[the next day]]
+~2 weeks later~
 
-[[look at spot sleeping]]
+Sergeant Callahan:
+
+&quot;Ok, men, today&#39;s the day you will be setting out. Go make your country proud.&quot;
+
+
+Everyone:
+
+&quot;Yes Ma&#39;am!&quot; 
+
+Sergeant Callahan:
+
+&quot;May God be with you.&quot;
+
+
+I [[set out on the mission]], no turning back.
+
+
+
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="191" name="Letter B" tags="" position="2250,2250" size="100,100">coming soon!
+}</tw-passagedata><tw-passagedata pid="201" name="set out on the mission" tags="" position="3600,2025" size="100,100">We set out, getting into a 4x4 military truck. We drove for miles, stopping only to refill the truck’s gas. After driving for 3 days non-stop, we made it to the destination.  We set up a base for operation and got into our formations. We had 3 people up on a hill set up with snipers, scouting for the enemy that might be passing by us. 4 of us are hiding in the trees and bushes, armed with automatic machine guns. The rest of us are setting up traps on the track so the enemy will have a hard time escaping when they get near us. 
+
+~2 hours later~
+
+The enemy arrived and passed through the traps we set up. One of my men set off the trap, triggering a huge explosion. More of my men  scare them as they start to get out of their car. We begin to shoot as the driver is taken out of one of them enemy soldier calls for back up; more cars pull up. That&#39;s when I realized this whole mission was a trap... They knew we were coming; there was no way back up would get here so quickly, and certainly not this many of them. As we had a full-on gun fight, 2 of the people who were with me got shot and died to my side. As things are going now, some of my men attempt to run away, and they get shot. I ended up dropping my radio as I struggled to run. I don&#39;t know what happened to the others, but all I feel right now is fear.
+
+I run.
+
+All I can think about is Finn and Diego.
+
+Diego...I promised I would see him after this war. I keep running, and a sharp pain hits my shoulder. It pushes me to the ground.
+
+Fear and pain consume my body; I drag my body away with my working hand. Enemy soldiers catch up to me.
+
+They’re toying with me as they kick me around. After they had their twisted fun, I closed my eyes, all I heard was a &quot;Boom&quot;.
+
+
+[[2 weeks later]]
+
 
 {
 &lt;div id=&quot;portraitL&quot;&gt;
-(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_smiling.PNG&quot;&gt;]
-(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_smiling.PNG&quot;&gt;]
+(if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
+(else:)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexM/m_alex_neutral.PNG&quot;&gt;]
 &lt;/div&gt;
-&lt;div id=&quot;portraitR&quot;&gt;&lt;img class=&quot;responsive-image&quot; src=&quot;assets/SideCharacters/finn.PNG&quot;&gt;&lt;/div&gt;
 
 &lt;style&gt;
 tw-story {
 	background-image: url(&#39;assets/Background/Bunk_Tent_Day.PNG&#39;);
 }
 &lt;/style&gt;
-}</tw-passagedata><tw-passagedata pid="192" name="the next day" tags="" position="2550,2100" size="100,100"></tw-passagedata><tw-passagedata pid="193" name="look at spot sleeping" tags="" position="2400,2100" size="100,100">we have an image of spot the pigen napping on a tree
+}</tw-passagedata><tw-passagedata pid="202" name="2 weeks later" tags="" position="3750,2025" size="100,100">Finn:
+It&#39;s been 2 years, and the war finally ended. We won, but it&#39;s just not the same. Sergeant Callahan never told me what happened to Alex; all she would say was &quot;It&#39;s confidential,&quot; but after waiting for weeks and months, I figured that my friend had died. In the end, that mission didn&#39;t accomplish anything. I&#39;m back home with my wife, who&#39;s expecting our first kid. I&#39;m thinking of naming him after you, my friend &quot;Alex&quot;.  But I still have one more thing to do before I can become a father. 
 
+I gathered the letters that Diego would send to Alex. It&#39;s been 2 years now, and he still sends him letters. I feel that it&#39;s my duty to tell Diego what happened. 
 
-[[the next day]]
+THE END
+
+[[Click to head back to the begining-&gt;&quot;Godspeed, Ember.&quot;]]
 {
 &lt;div id=&quot;portraitL&quot;&gt;
 (if: $playerGender is 0)[&lt;img class=&quot;responsive-image&quot; src=&quot;assets/AlexF/f_alex_neutral.PNG&quot;&gt;]
